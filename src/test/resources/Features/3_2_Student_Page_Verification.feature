@@ -17,8 +17,8 @@ Examples:
     | Two dropdowns on the page                                      |
     | a search box inside the Student name dropdown                  |
     | a search box inside the batch ID dropdown                      |
-    | correct spelling for "select student name"                     |
-    | correct spelling for "select batch ID"                         |
+    | correct spelling for "Select Student Name"                     |
+    | correct spelling for "Select batch Id"                         |
 
 Scenario: Validate the broken link
     When Admin clicks Student on the navigation bar
@@ -32,10 +32,14 @@ Examples:
     | dropdown_name        | color | other_attributes                                    |
     | select student name  | gray  | the correct spelling                                |
     | select batch ID      | gray  | only numbers                                        |
-    | select student name  | gray  | as the first dropdown                               |
-    | select batch ID      | gray  | as the second dropdown                              |
-    | select student name  | gray  | scroll functionality                                |
-    | select batch ID      | gray  | scroll functionality                                |
+    
+Scenario: Validate first drop down label is select student name
+When Admin clicks Student on the navigation bar
+Then Admin should see "Select Student Name" in first dropdown
+
+Scenario: Validate second drop down label is select batch id
+When Admin clicks Student on the navigation bar
+Then Admin should see "Select batch Id" in second dropdown
 
 Scenario Outline: Dropdown interactions
     Given Admin is on the student details page
@@ -46,8 +50,8 @@ Examples:
     | action                        | dropdown             | result                                          |
     | a name                        | student name dropdown| be able to scroll down to select the name       |
     | a batch ID                    | batch ID dropdown    | be able to scroll down to select the batch ID   |
-    | student name                  | student name dropdown| not see "select student name" text              |
-    | batch ID                      | batch ID dropdown    | not see "select batch ID" text                  |
+    | student name                  | student name dropdown| not see "Select Student Name" text              |
+    | batch ID                      | batch ID dropdown    | not see "Select batch Id" text                  |
     | x alphabet in the search box  | student name dropdown| see student names starting with "x" listed below|
     | x number in the search box    | batch ID dropdown    | see batch IDs starting with "x" listed below   |
     | only the student name         | student name dropdown| not see student details displayed               |

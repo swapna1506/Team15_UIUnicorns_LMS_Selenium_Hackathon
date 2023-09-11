@@ -17,5 +17,3 @@ Examples:
     | Assignment   | Assignment    |
     | Attendance   | Attendance    |
     | Logout       | Logout        |
-
-    # Note: User redirects to Student page based on your initial feature.

@@ -27,20 +27,20 @@ Scenario: Check if the required fields exist in the popup
 
 Scenario: Validate optional fields in the user popup
   Given A popup with user details appears
-  When I fill in all fields except MN, LinkedIn Url, Email, User comments, Undergraduate, Postgraduate, and Time zone with valid values and click submit
+  When Admin fill in all fields except MN, LinkedIn Url, Email, User comments, Undergraduate, Postgraduate, and Time zone with valid values and click submit
   Then The newly added user should be visible in the data table on the Manage User page
 
 Scenario: Ensure program details are added to the data table
   Given A popup with user details appears
-  When I fill in all fields with valid values and click submit
+  When Admin fill in all fields with valid values and click submit
   Then The newly added user should be visible in the data table on the Manage User page
 
 Scenario: Check for error messages when providing invalid field values
   Given A popup with user details appears
-  When I enter invalid values in any of the fields
+  When Admin enter invalid values in any of the fields
   Then An error message should appear
 
 Scenario: Validate error messages for unfilled mandatory fields
   Given A popup with user details appears
-  When I leave any of the mandatory fields blank
+  When Admin leave any of the mandatory fields blank
   Then An error message should appear

@@ -2,7 +2,7 @@ Feature: Dashboard Page
 
 Background:
     Given Admin visits the correct URL
-    And Admin is on the login page
+    And Admin clicks on login button to navigate to login page
     When Admin enters valid credentials
     And Admin clicks the login button
 
@@ -19,7 +19,7 @@ Scenario: Verify LMS title
     Then Admin should see "LMS - Learning Management System" as the title
 
 Scenario: Verify LMS title alignment
-    Then LMS title should be on the top left corner of the page
+    Then LMS title should be on the top left corner of the page assuming top left is 10,10
 
 Scenario: Validate navigation bar text
     Then Admin should see correct spelling in navigation bar text
@@ -28,21 +28,19 @@ Scenario: Validate LMS title has correct spelling and space
     Then Admin should see correct spelling and space in the LMS title
 
 Scenario: Validate alignment for navigation bar
-    Then Admin should see the navigation bar text on the top right side
+    Then Admin should see the navigation bar text container is on the top right side
 
 Scenario Outline: Validate navigation bar order
-    Then Admin should see <menu_item> in the <order> place
+    Then Admin should see "menu_item" in the "expectedIndex" place
 
 Examples:
-    | menu_item   | order |
-    | student    | 1st   |
-    | program    | 2nd   |
-    | batch      | 3rd   |
-    | class      | 4th   |
-    | user       | 5th   |
-    | assignment | 6th   |
-    | attendance | 7th   |
-    | logout     | 8th   |
+    | menu_item   | expectedIndex |
+    | Student    | 0   |
+    | Program    | 1   |
+    | Batch      | 2   |
+    | Class      | 3   |
+    | User       | 4   |
+    | Assignment | 5   |
+    | Attendance | 6   |
+    | Logout     | 7   |
 
-Scenario: Verify Admin remains on login page after login
-    Then Admin should land on the login page
