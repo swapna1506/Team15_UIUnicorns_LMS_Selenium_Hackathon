@@ -14,7 +14,7 @@ public class Helper {
 	private static Helper Helper;    
 	private static WebDriver driver ;
 
-	//public final static int TIMEOUT = 2;
+	
 	public final static int TIMEOUT = 2;
 
 
@@ -25,7 +25,9 @@ public class Helper {
 		//Resolving the chrome chrome websocket error
 
 		System.setProperty("webdriver.http.factory","jdk-http-client");
-		//pass options as argument to chromedriver
+		
+			
+		
 		 driver = new ChromeDriver();
 
 

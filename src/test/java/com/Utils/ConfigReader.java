@@ -45,6 +45,15 @@ public class ConfigReader {
 		else
 			throw new RuntimeException("url not specified in the Configuration.properties file.");
 	}
+	
+	public static String geturl(String pagename) {
+		String url = properties.getProperty(pagename);
+		if (url != null)
+			return url;
+		else
+			throw new RuntimeException(pagename + " url not specified in the Configuration.properties file.");
+	}
+
 
 	public static String getexcelfilepath() {
 		String excelfilelpath = properties.getProperty("excelfilepath");
@@ -52,6 +61,9 @@ public class ConfigReader {
 			return excelfilelpath;
 		else
 			throw new RuntimeException("Excel file path not specified in the Configuration.properties file.");
+	}
+	public static void setBrowserType(String browser) {
+		browserType = browser;
 	}
 
 }
