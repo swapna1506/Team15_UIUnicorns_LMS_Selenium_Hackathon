@@ -16,4 +16,4 @@ Examples:
     | User         | Student       |  
     | Assignment   | Assignment    |
     | Attendance   | Attendance    |
-    | Logout       | Logout        |
+    | Logout       | Login         |

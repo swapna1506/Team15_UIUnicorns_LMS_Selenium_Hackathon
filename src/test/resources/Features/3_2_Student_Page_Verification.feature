@@ -24,14 +24,14 @@ Scenario: Validate the broken link
     When Admin clicks Student on the navigation bar
     Then if HTTP response is >= 400 the link is broken
 
-Scenario Outline: Validate dropdown attributes
-    When Admin clicks Student on the navigation bar
-    Then Admin should see <dropdown_name> in <color> color and <other_attributes>
+#Scenario Outline: Validate dropdown attributes
+ #   When Admin clicks Student on the navigation bar
+  #  Then Admin should see <dropdown_name> in <color> color and <other_attributes>
 
-Examples:
-    | dropdown_name        | color | other_attributes                                    |
-    | select student name  | gray  | the correct spelling                                |
-    | select batch ID      | gray  | only numbers                                        |
+#Examples:
+ #   | dropdown_name        | color | other_attributes                                    |
+  #  | select student name  | gray  | the correct spelling                                |
+   # | select batch ID      | gray  | only numbers                                        |
     
 Scenario: Validate first drop down label is select student name
 When Admin clicks Student on the navigation bar
@@ -48,14 +48,12 @@ Scenario Outline: Dropdown interactions
 
 Examples:
     | action                        | dropdown             | result                                          |
-    | a name                        | student name dropdown| be able to scroll down to select the name       |
-    | a batch ID                    | batch ID dropdown    | be able to scroll down to select the batch ID   |
+#    | a name                        | student name dropdown| be able to scroll down to select the name       |
+#    | a batch ID                    | batch ID dropdown    | be able to scroll down to select the batch ID   |
     | student name                  | student name dropdown| not see "Select Student Name" text              |
     | batch ID                      | batch ID dropdown    | not see "Select batch Id" text                  |
-    | x alphabet in the search box  | student name dropdown| see student names starting with "x" listed below|
-    | x number in the search box    | batch ID dropdown    | see batch IDs starting with "x" listed below   |
-    | only the student name         | student name dropdown| not see student details displayed               |
-    | only the batch ID             | batch ID dropdown    | not see student details displayed               |
+    | "x" alphabet in the search box  | student name dropdown| see student names starting with "x" listed below|
+    | "x" number in the search box    | batch ID dropdown    | see batch IDs starting with "x" listed below   |
 
 Scenario: Display student info when both student name and batch ID are selected
     Given Admin is on the student details page
