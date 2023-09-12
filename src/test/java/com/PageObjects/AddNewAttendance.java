@@ -148,5 +148,17 @@ public class AddNewAttendance  {
 		WebElement Invalidmsg = driver.findElement(By.xpath("//div[text()='Invalid attendance date']"));
 		Invalidmsg.getText();
 	}
+	public void create6NewAttendance() throws IOException {
+		for(int i=0;i<=6;i++) {
+		excelUtils.setExcelFile(excelFilePath,"Attendance");
+		pgmName.sendKeys(excelUtils.getCellData(i,0));
+		clsName.sendKeys(excelUtils.getCellData(i,1));
+		stuName.sendKeys(excelUtils.getCellData(i,2));
+		att.sendKeys(excelUtils.getCellData(i,3));
+		attDate.sendKeys(excelUtils.getCellData(i,4));
+		
+		save.click();
+		}
+	}
 	
 }
