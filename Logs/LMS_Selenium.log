@@ -2196,3 +2196,31 @@
 [INFO ] 2023-09-12 14:46:11.867 [main] Loggerload - -----------------------------------------------------------------------------------------------
 [ERROR] 2023-09-12 14:46:11.880 [main] Loggerload - Steps Failed , Taking Screenshot
 [INFO ] 2023-09-12 14:46:12.057 [main] Loggerload - Closing Driver
+[INFO ] 2023-09-12 15:32:14.130 [main] Loggerload - Loading Config file
+[INFO ] 2023-09-12 15:32:14.135 [main] Loggerload - Get property BrowserType
+[INFO ] 2023-09-12 15:32:14.135 [main] Loggerload - Initializing driver for : chrome
+[INFO ] 2023-09-12 15:32:14.261 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 15:32:14.262 [main] Loggerload - [] : Verify admin is able to navigate from manage attendance to student page
+[INFO ] 2023-09-12 15:32:14.262 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 15:32:19.178 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 15:32:19.672 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 15:32:19.672 [main] Loggerload - [] : Verify admin is able to navigate from manage attendance to program page
+[INFO ] 2023-09-12 15:32:19.672 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 15:32:21.701 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 15:32:22.052 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 15:32:22.052 [main] Loggerload - [] : Verify admin is able to navigate from manage attendance to batch page
+[INFO ] 2023-09-12 15:32:22.053 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 15:32:24.130 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 15:32:24.431 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 15:32:24.431 [main] Loggerload - [] : Verify admin is able to navigate from manage attendance to assignment page
+[INFO ] 2023-09-12 15:32:24.432 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 15:32:26.507 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 15:32:26.901 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 15:32:26.901 [main] Loggerload - [] : Verify admin is able to navigate from manage attendance to class page
+[INFO ] 2023-09-12 15:32:26.901 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 15:32:28.958 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 15:32:29.249 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 15:32:29.250 [main] Loggerload - [] : Verify admin should able to do logout function from manage attendance
+[INFO ] 2023-09-12 15:32:29.250 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 15:32:31.272 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 15:32:31.587 [main] Loggerload - Closing Driver
