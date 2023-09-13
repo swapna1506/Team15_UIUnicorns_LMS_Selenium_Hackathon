@@ -1,16 +1,18 @@
 package com.Utils;
 
+import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
 
 public class ConfigReader {
 	private static Properties properties;
-	private final static String propertyFilePath = "./src/test/resources/Config/config.properties";
+	private final static String propertyFilePath = "./src/test/resources/Config//config.properties";
 	private static String browserType = null;
 
-	public static void loadConfig() throws Throwable {
+  public static void loadConfig() throws Throwable {
 
 		try {
 			FileInputStream fis;
@@ -27,6 +29,23 @@ public class ConfigReader {
 			throw new RuntimeException("Configuration.properties not found at " + propertyFilePath);
 		}
 	}
+	
+/*	public static void loadConfig(){
+		BufferedReader reader;
+		try {
+			reader = new BufferedReader(new FileReader(propertyFilePath));
+			properties = new Properties();
+			try {
+				properties.load(reader);
+				reader.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+			throw new RuntimeException("Configuration.properties not found at " + propertyFilePath);
+		}		
+	}*/
 
 	public static String getBrowserType() {
 		String browser = properties.getProperty("browser");

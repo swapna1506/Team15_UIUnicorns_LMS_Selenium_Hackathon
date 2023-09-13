@@ -96,8 +96,9 @@ public class ManageAttendence {
 	
 	public void clickattendenceBtn() {
 		
-		Loggerload.info("click on attendence " +attendenceBtn.getText()+" button");
-		Utils.webClick(attendenceBtn);
+		//Loggerload.info("click on attendence " +attendenceBtn.getText()+" button");
+		//Utils.webClick(attendenceBtn);
+		attendenceBtn.click();
 	}
 	
 	public String validateHeader() {

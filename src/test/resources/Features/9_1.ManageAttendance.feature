@@ -1,7 +1,7 @@
 Feature: Manage Attendence Page Verification
 
 Background: Admin logged on the LMS portal
-    Given Admin is on dashboard page after Login
+    Given Admin is on dashboard page after Login in to the LMS url "https://tutorialsninja.com/demo/index.php"
     When Admin clicks Attendence on the navigation bar
     
  Scenario: Validate the header of the page

@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
+import com.Utils.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Helper {
@@ -19,6 +19,7 @@ public class Helper {
 
 
 	private Helper() {
+		
 
 		WebDriverManager.chromedriver().setup(); //setting up and initializing webdriver
 		

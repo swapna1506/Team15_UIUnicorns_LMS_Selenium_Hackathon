@@ -9,18 +9,19 @@ import org.openqa.selenium.WebDriver;
 import com.PageObjects.AttendanceDetails1;
 import com.PageObjects.AttendanceDetails;
 import com.PageObjects.ManageAttendence;
+import com.Utils.BaseClass;
 import com.Utils.Helper;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class AttendanceDetails1StepDef {
+public class AttendanceDetails1StepDef extends BaseClass {
 	
 	WebDriver driver = Helper.getDriver();
-	AttendanceDetails adp = new AttendanceDetails(driver);
+	/*AttendanceDetails adp = new AttendanceDetails(driver);
 	ManageAttendence mp =new ManageAttendence(Helper.getDriver());
-	AttendanceDetails1 adp1 = new AttendanceDetails1(driver);
+	AttendanceDetails1 adp1 = new AttendanceDetails1(driver);*/
 	
 	@Given("Admin is in  attendance details popup window")
 	public void admin_is_in_attendance_details_popup_window() {

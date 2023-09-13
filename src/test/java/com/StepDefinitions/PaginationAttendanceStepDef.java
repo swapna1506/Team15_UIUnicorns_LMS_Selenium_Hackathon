@@ -4,18 +4,19 @@ import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
 
+import com.Utils.BaseClass;
 import com.Utils.Helper;
 import com.PageObjects.*;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class PaginationAttendanceStepDef {
+public class PaginationAttendanceStepDef extends BaseClass{
 	
 	WebDriver driver = Helper.getDriver();
-	ManageAttendence mp =new ManageAttendence(driver);
+	/*ManageAttendence mp =new ManageAttendence(driver);
 	AddNewAttendance nap = new AddNewAttendance(driver);
-	PaginationAttendance pa = new PaginationAttendance(driver);
+	PaginationAttendance pa = new PaginationAttendance(driver);*/
 	
 	@When("Admin clicks {string} button on the navigation bar")
 	public void admin_clicks_button_on_the_navigation_bar(String string) {

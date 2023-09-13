@@ -14,6 +14,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.PageObjects.ManageAttendence;
 import com.Utils.BaseClass;
 import com.Utils.Helper;
+import com.Utils.ConfigReader;
 import java.net.URL;
 import java.time.Duration;
 import java.io.IOException;
@@ -22,20 +23,24 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.support.PageFactory;
-public class ManageAttendenceStepDef extends BaseClass {
 
+public class ManageAttendenceStepDef extends BaseClass {
+	//ConfigReader ConfigReader;
+	
+	
 	WebDriver driver = Helper.getDriver();
 	ManageAttendence mp = new ManageAttendence(driver);
-	String url;
+	
 	int winHeight = driver.manage().window().getSize().getHeight();
 	int winWidth = driver.manage().window().getSize().getWidth();
 	@FindBy(xpath = "//a[text()='Manage Attendance']") 	
 	@CacheLookup 	WebElement attendanceHeader;
-	@Given("Admin is on dashboard page after Login")
-	public void admin_is_on_dashboard_page_after_login() throws InterruptedException {
+	 
+	@Given("Admin is on dashboard page after Login in to the LMS url {string}")
+	public void admin_is_on_dashboard_page_after_login_in_to_the_LMS_url(String url) throws InterruptedException {
+		//ConfigReader = new ConfigReader();
+	  Helper.openPage(url);
 		
-	    Helper.openPage(url);
-	    
 	}
 
 	@When("Admin clicks Attendence on the navigation bar")

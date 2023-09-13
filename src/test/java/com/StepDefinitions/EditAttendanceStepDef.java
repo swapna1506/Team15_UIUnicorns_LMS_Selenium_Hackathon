@@ -8,19 +8,20 @@ import com.PageObjects.AddNewAttendance;
 import com.PageObjects.AttendanceDetails;
 import com.PageObjects.AttendanceDetails1;
 import com.PageObjects.ManageAttendence;
+import com.Utils.BaseClass;
 import com.Utils.Helper;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import com.PageObjects.*;
-public class EditAttendanceStepDef {
+public class EditAttendanceStepDef extends BaseClass{
 	
 	WebDriver driver = Helper.getDriver();
-	AttendanceDetails adp = new AttendanceDetails(driver);
+	/*AttendanceDetails adp = new AttendanceDetails(driver);
 	ManageAttendence mp =new ManageAttendence(driver);
 	AttendanceDetails1 adp1 = new AttendanceDetails1(driver);
 	AddNewAttendance nap = new AddNewAttendance(driver);
-	EditAttendance eap = new EditAttendance(driver);
+	EditAttendance eap = new EditAttendance(driver);*/
 	
 	@When("Admin fills all the values and click save to update")
 	public void admin_fills_all_the_values_and_click_save_to_update() throws IOException {

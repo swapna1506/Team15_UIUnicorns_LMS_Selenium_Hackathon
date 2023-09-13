@@ -15,8 +15,8 @@ import junit.framework.Assert;
 
 public class AttendanceDetailsStepDef extends BaseClass {
 	WebDriver driver = Helper.getDriver();
-	AttendanceDetails adp = new AttendanceDetails(driver);
-	ManageAttendence mp =new ManageAttendence(Helper.getDriver());
+/*	AttendanceDetails adp = new AttendanceDetails(driver);
+	ManageAttendence mp =new ManageAttendence(Helper.getDriver());*/
 	
 	@Given("Admin is in manage attendance page")
 	public void admin_is_in_manage_attendance_page() {
