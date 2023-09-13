@@ -19,14 +19,7 @@ import junit.framework.Assert;
 import com.PageObjects.*;
 public class NavigationAttendanceStepDef extends BaseClass {
 	WebDriver driver = Helper.getDriver();
-	/*AttendanceDetails adp = new AttendanceDetails(driver);
-	ManageAttendence mp =new ManageAttendence(driver);
-	AttendanceDetails1 adp1 = new AttendanceDetails1(driver);
-	AddNewAttendance nap = new AddNewAttendance(driver);
-	EditAttendance eap = new EditAttendance(driver);
-	DeleteAttendance dp = new DeleteAttendance(driver);
-	DeleteMultipleAttendance dmp = new DeleteMultipleAttendance(driver);
-	NavigationAttendance na = new NavigationAttendance(driver);*/
+	
 	
 	
 	@When("Admin clicks {string} button in the navigation bar")

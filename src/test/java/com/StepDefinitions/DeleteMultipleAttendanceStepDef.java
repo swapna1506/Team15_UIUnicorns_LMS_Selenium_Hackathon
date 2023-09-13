@@ -21,13 +21,7 @@ public class DeleteMultipleAttendanceStepDef extends BaseClass{
 	
 
 	WebDriver driver = Helper.getDriver();
-	/*AttendanceDetails adp = new AttendanceDetails(driver);
-	ManageAttendence mp =new ManageAttendence(driver);
-	AttendanceDetails1 adp1 = new AttendanceDetails1(driver);
-	AddNewAttendance nap = new AddNewAttendance(driver);
-	EditAttendance eap = new EditAttendance(driver);
-	DeleteAttendance dp = new DeleteAttendance(driver);
-	DeleteMultipleAttendance dmp = new DeleteMultipleAttendance(driver);*/
+	
 	
 	@When("Admin clicks single  row level check box in the data table")
 	public void admin_clicks_single_row_level_check_box_in_the_data_table() {

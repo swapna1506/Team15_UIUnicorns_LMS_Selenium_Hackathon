@@ -5218,3 +5218,331 @@
 [INFO ] 2023-09-12 21:46:28.315 [main] Loggerload - -----------------------------------------------------------------------------------------------
 [ERROR] 2023-09-12 21:46:28.317 [main] Loggerload - Steps Failed , Taking Screenshot
 [INFO ] 2023-09-12 21:46:28.535 [main] Loggerload - Closing Driver
+[INFO ] 2023-09-12 21:56:07.651 [main] Loggerload - Loading Config file
+[INFO ] 2023-09-12 21:56:07.655 [main] Loggerload - Get property BrowserType
+[INFO ] 2023-09-12 21:56:07.656 [main] Loggerload - Initializing driver for : chrome
+[INFO ] 2023-09-12 21:56:07.926 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:56:07.927 [main] Loggerload - [] : Validate the header of the page
+[INFO ] 2023-09-12 21:56:07.927 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:56:18.400 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:56:18.732 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:56:18.733 [main] Loggerload - [] : Validate response time from dashboard page to attendence page
+[INFO ] 2023-09-12 21:56:18.733 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:56:23.176 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:56:23.489 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:56:23.490 [main] Loggerload - [] : Validate the broken link
+[INFO ] 2023-09-12 21:56:23.490 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:56:28.011 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:56:28.263 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:56:28.264 [main] Loggerload - [] : Verify LMS title
+[INFO ] 2023-09-12 21:56:28.264 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:56:32.737 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:56:32.982 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:56:32.982 [main] Loggerload - [] : Verify the alignment of the Manage attendence header
+[INFO ] 2023-09-12 21:56:32.982 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:56:37.574 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:56:37.823 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:56:37.823 [main] Loggerload - [] : Validate text in manage attendence page
+[INFO ] 2023-09-12 21:56:37.823 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:56:43.244 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:56:43.491 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:56:43.491 [main] Loggerload - [] : Verify delete icon below the header
+[INFO ] 2023-09-12 21:56:43.491 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:56:47.973 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:56:48.260 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:56:48.260 [main] Loggerload - [] : Verify search bar on the attendence page
+[INFO ] 2023-09-12 21:56:48.260 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:56:52.750 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:56:53.003 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:56:53.004 [main] Loggerload - [] : Verify add new Attendence button on
+[INFO ] 2023-09-12 21:56:53.004 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:56:57.426 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:56:57.697 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:56:57.698 [main] Loggerload - [] : Verify date table on the attendence page
+[INFO ] 2023-09-12 21:56:57.698 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:02.123 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:02.393 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:02.394 [main] Loggerload - [] : Verify Edit icon in the data table
+[INFO ] 2023-09-12 21:57:02.394 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:06.904 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:07.154 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:07.154 [main] Loggerload - [] : Verify edit icon when no data in the table
+[INFO ] 2023-09-12 21:57:07.154 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:11.637 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:11.884 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:11.884 [main] Loggerload - [] : Verify delete icon in the data table
+[INFO ] 2023-09-12 21:57:11.884 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:16.356 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:16.645 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:16.645 [main] Loggerload - [] : Verify delete icon when no data in the table
+[INFO ] 2023-09-12 21:57:16.645 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:21.120 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:21.396 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:21.396 [main] Loggerload - [] : Verify sort icon the data table
+[INFO ] 2023-09-12 21:57:21.396 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:25.879 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:26.127 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:26.128 [main] Loggerload - [] : Verify check box in the data table
+[INFO ] 2023-09-12 21:57:26.128 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:30.637 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:30.936 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:30.936 [main] Loggerload - [] : Validate the number entries displaying
+[INFO ] 2023-09-12 21:57:30.936 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:35.433 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:35.685 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:35.685 [main] Loggerload - [] : Verify Pagination control below the data
+[INFO ] 2023-09-12 21:57:35.685 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:40.202 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:40.496 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:40.496 [main] Loggerload - [] : Validate footer text
+[INFO ] 2023-09-12 21:57:40.496 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:44.982 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:45.233 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:45.233 [main] Loggerload - [] : Verify all label text
+[INFO ] 2023-09-12 21:57:45.233 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:45.235 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:45.467 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:45.467 [main] Loggerload - [] : Verify dropdown box is present
+[INFO ] 2023-09-12 21:57:45.467 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:45.469 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:45.700 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:45.700 [main] Loggerload - [] : Verify close button in attendance details popup window
+[INFO ] 2023-09-12 21:57:45.700 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:45.702 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:45.948 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:45.948 [main] Loggerload - [] : Verify the alignment of the close button
+[INFO ] 2023-09-12 21:57:45.948 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:45.951 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:46.189 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:46.190 [main] Loggerload - [] : Verify the text on first dropdown select a program name
+[INFO ] 2023-09-12 21:57:46.190 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:46.192 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:46.477 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:46.477 [main] Loggerload - [] : Verify the text on second dropdown select class  name
+[INFO ] 2023-09-12 21:57:46.477 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:46.479 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:46.709 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:46.709 [main] Loggerload - [] : Verify the text on third dropdown select students
+[INFO ] 2023-09-12 21:57:46.709 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:46.711 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:46.968 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:46.969 [main] Loggerload - [] : Verify the text on fourth dropdown select attendance
+[INFO ] 2023-09-12 21:57:46.969 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:46.970 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:47.222 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:47.222 [main] Loggerload - [] : Verify all the text inside the dropdown box is gray color
+[INFO ] 2023-09-12 21:57:47.222 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:47.224 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:47.443 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:47.443 [main] Loggerload - [] : Verify save button is present
+[INFO ] 2023-09-12 21:57:47.443 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:47.445 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:47.694 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:47.694 [main] Loggerload - [] : Verify cancel button is present
+[INFO ] 2023-09-12 21:57:47.694 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:47.696 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:47.947 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:47.947 [main] Loggerload - [] : Verify order of the label in attendance details page
+[INFO ] 2023-09-12 21:57:47.947 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:47.949 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:48.204 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:48.204 [main] Loggerload - [] : Validate all program name is reflecting in the dropdown
+[INFO ] 2023-09-12 21:57:48.204 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:48.207 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:48.425 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:48.425 [main] Loggerload - [] : Validate all class name  is reflecting in the dropdown
+[INFO ] 2023-09-12 21:57:48.425 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:48.426 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:48.665 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:48.666 [main] Loggerload - [] : Validate attendance field dropdown all mandatory keywords
+[INFO ] 2023-09-12 21:57:48.666 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:48.667 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:48.907 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:48.907 [main] Loggerload - [] : Verify spellings in the attendance field drop down
+[INFO ] 2023-09-12 21:57:48.907 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:48.909 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:49.136 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:49.136 [main] Loggerload - [] : Validate date picker
+[INFO ] 2023-09-12 21:57:49.137 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:49.139 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:49.393 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:49.393 [main] Loggerload - [] : validate date picker should be correct format
+[INFO ] 2023-09-12 21:57:49.393 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:49.395 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:49.644 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:49.644 [main] Loggerload - [] : Validate right arrow in data picker to navigate to next month
+[INFO ] 2023-09-12 21:57:49.644 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:49.645 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:49.895 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:49.895 [main] Loggerload - [] : Validate left arrow in data picker to navigate to previous month
+[INFO ] 2023-09-12 21:57:49.896 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:49.897 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:50.140 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:50.140 [main] Loggerload - [] : Validate current date is highlighted in the date picker
+[INFO ] 2023-09-12 21:57:50.140 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:50.141 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:50.374 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:50.374 [main] Loggerload - [] : Validate selected date is highlighted in the date picker
+[INFO ] 2023-09-12 21:57:50.374 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:50.375 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:50.609 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:50.609 [main] Loggerload - [] : Validate admin able to create new attendance data
+[INFO ] 2023-09-12 21:57:50.609 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:50.611 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:50.859 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:50.859 [main] Loggerload - [] : Validate admin able to create new attendance data without program name
+[INFO ] 2023-09-12 21:57:50.859 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:50.861 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:51.088 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:51.088 [main] Loggerload - [] : Validate admin able to create new attendance data without class name
+[INFO ] 2023-09-12 21:57:51.089 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:51.090 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:51.332 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:51.332 [main] Loggerload - [] : Validate admin able to create new attendance data without student name
+[INFO ] 2023-09-12 21:57:51.332 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:51.333 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:51.581 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:51.581 [main] Loggerload - [] : Validate admin able to create new attendance data without attendances
+[INFO ] 2023-09-12 21:57:51.581 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:51.583 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:51.825 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:51.826 [main] Loggerload - [] : Validate admin able to create new attendance data without attendance date
+[INFO ] 2023-09-12 21:57:51.826 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:51.827 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:52.061 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:52.061 [main] Loggerload - [] : Validate admin able to create new attendance by selecting future date
+[INFO ] 2023-09-12 21:57:52.061 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:52.063 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:52.318 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:52.318 [main] Loggerload - [] : Validate admin able to update new attendance data
+[INFO ] 2023-09-12 21:57:52.318 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:52.320 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:52.554 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:52.554 [main] Loggerload - [] : Validate admin able to update new attendance data without program name
+[INFO ] 2023-09-12 21:57:52.554 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:52.556 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:52.774 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:52.774 [main] Loggerload - [] : Validate admin able to update new attendance data without class name
+[INFO ] 2023-09-12 21:57:52.774 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:52.776 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:53.010 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:53.010 [main] Loggerload - [] : Validate admin able to update new attendance data without student name
+[INFO ] 2023-09-12 21:57:53.010 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:53.012 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:53.224 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:53.224 [main] Loggerload - [] : Validate admin able to update new attendance data without attendances
+[INFO ] 2023-09-12 21:57:53.224 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:53.226 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:53.440 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:53.440 [main] Loggerload - [] : Validate admin able to update new attendance data without attendance date
+[INFO ] 2023-09-12 21:57:53.440 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:53.442 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:53.687 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:53.687 [main] Loggerload - [] : Validate admin able to update new attendance by selecting future date
+[INFO ] 2023-09-12 21:57:53.687 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:53.689 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:53.915 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:53.915 [main] Loggerload - [] : Verify Delete attendance alert
+[INFO ] 2023-09-12 21:57:53.915 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:53.917 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:54.163 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:54.163 [main] Loggerload - [] : Verify accept enabled in alert
+[INFO ] 2023-09-12 21:57:54.163 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:54.164 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:54.397 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:54.397 [main] Loggerload - [] : Verify reject enabled in alert
+[INFO ] 2023-09-12 21:57:54.397 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:54.399 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:54.632 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:54.632 [main] Loggerload - [] : Validate accept in alert
+[INFO ] 2023-09-12 21:57:54.632 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:54.634 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:54.891 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:54.891 [main] Loggerload - [] : Validate reject in alert
+[INFO ] 2023-09-12 21:57:54.891 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:54.892 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:55.211 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:55.211 [main] Loggerload - [] : Verify delete multiple class  button is enabled
+[INFO ] 2023-09-12 21:57:55.211 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:55.213 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:55.459 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:55.459 [main] Loggerload - [] : verify tick mark is visible after clicking on check box for single data
+[INFO ] 2023-09-12 21:57:55.459 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:55.461 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:55.691 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:55.691 [main] Loggerload - [] : verify admin able to click multiple check box
+[INFO ] 2023-09-12 21:57:55.691 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:55.692 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:55.922 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:55.923 [main] Loggerload - [] : Verify accept alert in delete multiple attendance by selecting single checkbox
+[INFO ] 2023-09-12 21:57:55.923 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:55.925 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:56.154 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:56.154 [main] Loggerload - [] : Verify reject alert in delete multiple attendance by selecting single checkbox
+[INFO ] 2023-09-12 21:57:56.154 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:56.156 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:56.396 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:56.396 [main] Loggerload - [] : Verify accept alert in delete multiple attendance by selecting multiple checkbox
+[INFO ] 2023-09-12 21:57:56.396 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:56.398 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:56.657 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:56.657 [main] Loggerload - [] : Verify reject alert in delete multiple attendance by selecting multiple checkbox
+[INFO ] 2023-09-12 21:57:56.657 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:56.658 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:56.923 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:56.924 [main] Loggerload - [] : Verify sheet one is displayed on default in data table
+[INFO ] 2023-09-12 21:57:56.924 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-09-12 21:57:56.937 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:56.937 [main] Loggerload - [] : Verify  right arrow is enable when sheet one is displayed in data table
+[INFO ] 2023-09-12 21:57:56.937 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-09-12 21:57:56.949 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:56.949 [main] Loggerload - [] : Verify left arrow is disable when sheet one is displayed in data table
+[INFO ] 2023-09-12 21:57:56.949 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-09-12 21:57:56.960 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:56.960 [main] Loggerload - [] : Verify  right arrow is enable when sheet two is displayed in data table
+[INFO ] 2023-09-12 21:57:56.960 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-09-12 21:57:56.970 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:56.970 [main] Loggerload - [] : Verify  left arrow is enable when sheet two is displayed in data table
+[INFO ] 2023-09-12 21:57:56.970 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-09-12 21:57:56.980 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:56.980 [main] Loggerload - [] : Verify  right arrow is disable when sheet two is displayed in data table when entries are less than 10
+[INFO ] 2023-09-12 21:57:56.980 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-09-12 21:57:56.990 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:56.991 [main] Loggerload - [] : Verify pagination controls enabled
+[INFO ] 2023-09-12 21:57:56.991 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-09-12 21:57:57.001 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:57.001 [main] Loggerload - [] : Verify pagination controls enabled
+[INFO ] 2023-09-12 21:57:57.001 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[INFO ] 2023-09-12 21:57:57.011 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:57.011 [main] Loggerload - [] : Verify next page is enabled
+[INFO ] 2023-09-12 21:57:57.011 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:57.014 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:57.260 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:57.260 [main] Loggerload - [] : Verify next page is enabled
+[INFO ] 2023-09-12 21:57:57.260 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:57.262 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:57.498 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:57.498 [main] Loggerload - [] : Verify admin is able to navigate from manage attendance to student page
+[INFO ] 2023-09-12 21:57:57.498 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:57.500 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:57.742 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:57.742 [main] Loggerload - [] : Verify admin is able to navigate from manage attendance to program page
+[INFO ] 2023-09-12 21:57:57.742 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:57.744 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:58.013 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:58.013 [main] Loggerload - [] : Verify admin is able to navigate from manage attendance to batch page
+[INFO ] 2023-09-12 21:57:58.013 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:58.015 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:58.273 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:58.274 [main] Loggerload - [] : Verify admin is able to navigate from manage attendance to assignment page
+[INFO ] 2023-09-12 21:57:58.274 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:58.276 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:58.504 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:58.504 [main] Loggerload - [] : Verify admin is able to navigate from manage attendance to class page
+[INFO ] 2023-09-12 21:57:58.504 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:58.506 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:58.728 [main] Loggerload - ===============================================================================================
+[INFO ] 2023-09-12 21:57:58.728 [main] Loggerload - [] : Verify admin should able to do logout function from manage attendance
+[INFO ] 2023-09-12 21:57:58.728 [main] Loggerload - -----------------------------------------------------------------------------------------------
+[ERROR] 2023-09-12 21:57:58.730 [main] Loggerload - Steps Failed , Taking Screenshot
+[INFO ] 2023-09-12 21:57:58.980 [main] Loggerload - Closing Driver

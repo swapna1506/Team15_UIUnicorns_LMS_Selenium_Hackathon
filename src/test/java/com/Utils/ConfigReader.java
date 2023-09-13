@@ -30,22 +30,7 @@ public class ConfigReader {
 		}
 	}
 	
-/*	public static void loadConfig(){
-		BufferedReader reader;
-		try {
-			reader = new BufferedReader(new FileReader(propertyFilePath));
-			properties = new Properties();
-			try {
-				properties.load(reader);
-				reader.close();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-			throw new RuntimeException("Configuration.properties not found at " + propertyFilePath);
-		}		
-	}*/
+
 
 	public static String getBrowserType() {
 		String browser = properties.getProperty("browser");

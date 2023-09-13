@@ -25,7 +25,7 @@ import io.cucumber.java.en.When;
 import org.openqa.selenium.support.PageFactory;
 
 public class ManageAttendenceStepDef extends BaseClass {
-	//ConfigReader ConfigReader;
+	
 	
 	
 	WebDriver driver = Helper.getDriver();
@@ -38,7 +38,7 @@ public class ManageAttendenceStepDef extends BaseClass {
 	 
 	@Given("Admin is on dashboard page after Login in to the LMS url {string}")
 	public void admin_is_on_dashboard_page_after_login_in_to_the_LMS_url(String url) throws InterruptedException {
-		//ConfigReader = new ConfigReader();
+		
 	  Helper.openPage(url);
 		
 	}

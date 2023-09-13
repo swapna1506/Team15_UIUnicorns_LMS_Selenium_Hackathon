@@ -14,9 +14,7 @@ import io.cucumber.java.en.When;
 public class PaginationAttendanceStepDef extends BaseClass{
 	
 	WebDriver driver = Helper.getDriver();
-	/*ManageAttendence mp =new ManageAttendence(driver);
-	AddNewAttendance nap = new AddNewAttendance(driver);
-	PaginationAttendance pa = new PaginationAttendance(driver);*/
+	
 	
 	@When("Admin clicks {string} button on the navigation bar")
 	public void admin_clicks_button_on_the_navigation_bar(String string) {
