@@ -7,16 +7,15 @@ Background:
 
 Scenario: Validate row level delete icon prompts a confirmation alert
   Given The delete icon on row level in the data table is enabled
-  When Admin clicks the delete icon
+  When Admin clicks the delete icon for user "Steve"
   Then An alert appears with "yes" and "no" options
 
 Scenario: Validate user deletion after confirming from the alert
   Given The delete icon on row level in the data table is enabled
   When Admin clicks the "yes" option on the confirmation alert
   Then A "User deleted" alert pops up
-  And The user is no more available in the data table
+  And The user "Steve" is no more available in the data table
 
 Scenario: Validate user is not deleted when declining from the alert
-  Given Admin has triggered the delete confirmation alert
-  When Admin clicks the "no" option
-  Then The user is still listed in the data table
+  When Admin clicks the "no" option on the confirmation alert
+  Then The user "Steve" is still listed in the data table

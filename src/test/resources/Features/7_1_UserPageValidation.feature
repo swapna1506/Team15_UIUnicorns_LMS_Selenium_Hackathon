@@ -18,7 +18,7 @@ Scenario: Validate data table headers in the User Page
   Then Admin should see the data table with headers Id, Name, location, Phone Number, Edit/Delete
 
 Scenario: Validate Delete button in User Page
-  Then Admin should see a "Delete" icon button that is disabled
+  Then Admin should see a Delete icon button that is disabled
 
 Scenario: Validate "+ A New user" button in User Page
   Then Admin should see the "+ A New User" button

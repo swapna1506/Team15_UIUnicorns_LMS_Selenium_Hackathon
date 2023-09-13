@@ -54,7 +54,7 @@ public class StudentPage {
 	WebElement logoutBtn;
 
 	@FindBy(className = "Student-Page-title")
-	WebElement studentPageTitle; // Assuming LMS title has a class "lms-title"
+	WebElement studentPageTitle; 
 
 	@FindBy(className = "menu-item")
 	List<WebElement> menuItems; // Assuming LMS title has a class "navbar-text-container"

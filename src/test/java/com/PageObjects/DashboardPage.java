@@ -58,6 +58,10 @@ public class DashboardPage {
 	 @FindBy(className ="menu-item")
 	 List<WebElement> menuItems; // Assuming LMS title has a class "navbar-text-container"
 	 
+	 
+	 public void clickStudentLink() {
+		 menuItems.get(0).click();
+	 }
  
 	 
 	 //Visit LMS Home Page
