@@ -3,7 +3,7 @@ Feature: Delete User from LMS Portal
 Background:
   Given Admin is logged on the LMS portal
   And Admin is on the dashboard page
-  And Admin has navigated to "User" from the navigation bar
+  And Admin clicks User from the navigation bar
 
 Scenario: Validate row level delete icon prompts a confirmation alert
   Given The delete icon on row level in the data table is enabled

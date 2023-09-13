@@ -62,6 +62,10 @@ public class DashboardPage {
 	 public void clickStudentLink() {
 		 menuItems.get(0).click();
 	 }
+	 
+	 public void clickUserLink() {
+		 menuItems.get(4).click();
+	 }
  
 	 
 	 //Visit LMS Home Page

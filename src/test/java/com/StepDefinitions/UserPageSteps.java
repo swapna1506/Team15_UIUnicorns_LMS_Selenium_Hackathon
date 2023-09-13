@@ -2,6 +2,8 @@
 
 package com.StepDefinitions;
 
+import java.util.List;
+
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 
@@ -23,12 +25,6 @@ public class UserPageSteps {
 	@Given("Admin is on the dashboard page after Login")
 	public void admin_is_on_the_dashboard_page_after_login() {
 		Assert.assertEquals("Dashboard Page", dashboardPage.getCurrentPageTitle());
-	}
-
-	@When("Admin clicks {string} from navigation bar")
-	public void admin_clicks_from_navigation_bar(String string) {
-		dashboardPage.clickStudentLink();
-		Assert.assertEquals("User Details Page", uspg.getCurrentPageTitle());
 	}
 
 	@Then("Admin should see {string} in the URL")
@@ -101,82 +97,117 @@ public class UserPageSteps {
 				Assert.assertEquals("Dashboard Page", dashboardPage.getCurrentPageTitle());
 	}
 
-	@Given("Admin clicks {string} from the navigation bar")
+	@Given("Admin clicks User from the navigation bar")
 	public void admin_clicks_from_the_navigation_bar(String string) {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		dashboardPage.clickUserLink();
+		Assert.assertEquals("User Details Page", uspg.getCurrentPageTitle());
 	}
 
 	@Given("Admin clicks the {string} button")
 	public void admin_clicks_the_button(String string) {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		 uspg.clickAddNewUser();
 	}
 
 	@Given("A popup with user details appears")
 	public void a_popup_with_user_details_appears() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		Assert.assertTrue(uspg.isUserDetailPopupDisplayed());
 	}
 
 	@Then("The popup should have the following text boxes:")
 	public void the_popup_should_have_the_following_text_boxes(io.cucumber.datatable.DataTable dataTable) {
-	    // Write code here that turns the phrase above into concrete actions
-	    // For automatic transformation, change DataTable to one of
-	    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
-	    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
-	    // Double, Byte, Short, Long, BigInteger or BigDecimal.
-	    //
-	    // For other transformations you can register a DataTableType.
-	    throw new io.cucumber.java.PendingException();
+		List<String> textBoxIds = dataTable.asList(String.class);
+        for(String id : textBoxIds) {
+            if(uspg.isTextBoxNotDisplayedInPopup(id)) {
+                throw new AssertionError("Text box with id " + id + " is not displayed.");
+            }
+        }
 	}
 
 	@Then("The popup should have the following drop-downs:")
 	public void the_popup_should_have_the_following_drop_downs(io.cucumber.datatable.DataTable dataTable) {
-	    // Write code here that turns the phrase above into concrete actions
-	    // For automatic transformation, change DataTable to one of
-	    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
-	    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
-	    // Double, Byte, Short, Long, BigInteger or BigDecimal.
-	    //
-	    // For other transformations you can register a DataTableType.
-	    throw new io.cucumber.java.PendingException();
+		List<String> dropDownIds = dataTable.asList(String.class);
+        for(String id : dropDownIds) {
+            if(uspg.isDropdownNotDisplayedInPopup(id)) {
+                throw new AssertionError("Drop-down with id " + id + " is not displayed.");
+            }
+        }
 	}
 
 	@When("Admin fill in all fields except MN, LinkedIn Url, Email, User comments, Undergraduate, Postgraduate, and Time zone with valid values and click submit")
 	public void admin_fill_in_all_fields_except_mn_linked_in_url_email_user_comments_undergraduate_postgraduate_and_time_zone_with_valid_values_and_click_submit() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	   uspg.addFirstName("Steve");
+	   uspg.addLastName("lName");
+	   uspg.addLocation("lll");
+	   uspg.addtxtPhone("777777788");
+	   uspg.addUserRole();
+	   uspg.addRoleStatus();
+	   uspg.addselVisaStatus();
+	   uspg.clickSubmitBtn();
 	}
 
-	@Then("The newly added user should be visible in the data table on the Manage User page")
-	public void the_newly_added_user_should_be_visible_in_the_data_table_on_the_manage_user_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	@Then("The newly added user {string} should be visible in the data table on the Manage User page")
+	public void the_newly_added_user_should_be_visible_in_the_data_table_on_the_manage_user_page(String name) {
+		Assert.assertFalse(uspg.CheckUserExistInTable(name));
 	}
 
 	@When("Admin fill in all fields with valid values and click submit")
 	public void admin_fill_in_all_fields_with_valid_values_and_click_submit() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+			uspg.addFirstName("Steve");
+		   uspg.addLastName("lName");
+		   uspg.addMiddleName("hhh");
+		   uspg.addLocation("lll");
+		   uspg.addtxtPhone("777777788");
+		   uspg.addtxtLinkedInURL("http://www.linkedin.com");
+		   uspg.addUserRole();
+		   uspg.addRoleStatus();
+		   uspg.addselVisaStatus();
+		   uspg.addtxtEmail("abc@linkedin.com");
+		   uspg.addtxtUnderGrad("dd");
+		   uspg.addtxtPostGrad("ddd");
+		   uspg.addtxtTimeZone("dddd");
+		   uspg.addtxtUserComments("sss");
+		   uspg.clickSubmitBtn();
 	}
 
-	@When("Admin enter invalid values in any of the fields")
+	@When("Admin enter invalid values in any of the fields and click Submit")
 	public void admin_enter_invalid_values_in_any_of_the_fields() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		uspg.addFirstName("Steve");
+		   uspg.addLastName("lName");
+		   uspg.addMiddleName("hhh");
+		   uspg.addLocation("lll");
+		   uspg.addtxtPhone("777777788");
+		   uspg.addtxtLinkedInURL("http://www.linkedin.com");
+		   uspg.addUserRole();
+		   uspg.addRoleStatus();
+		   uspg.addselVisaStatus();
+		   uspg.addtxtEmail("WRONG_INPUT_NO_EMAIL");
+		   uspg.addtxtUnderGrad("dd");
+		   uspg.addtxtPostGrad("ddd");
+		   uspg.addtxtTimeZone("dddd");
+		   uspg.addtxtUserComments("sss");
+		   uspg.clickSubmitBtn();
 	}
 
 	@Then("An error message should appear")
 	public void an_error_message_should_appear() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	    Assert.assertTrue(uspg.isErrorDisplayed());
 	}
 
-	@When("Admin leave any of the mandatory fields blank")
+	@When("Admin leave any of the mandatory fields blank and click Submit")
 	public void admin_leave_any_of_the_mandatory_fields_blank() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		uspg.addMiddleName("hhh");
+		   uspg.addLocation("lll");
+		   uspg.addtxtPhone("777777788");
+		   uspg.addtxtLinkedInURL("http://www.linkedin.com");
+		   uspg.addUserRole();
+		   uspg.addRoleStatus();
+		   uspg.addselVisaStatus();
+		   uspg.addtxtEmail("abc@linkedin.com");
+		   uspg.addtxtUnderGrad("dd");
+		   uspg.addtxtPostGrad("ddd");
+		   uspg.addtxtTimeZone("dddd");
+		   uspg.addtxtUserComments("sss");
+		   uspg.clickSubmitBtn();
 	}
 
 		
@@ -188,8 +219,7 @@ public class UserPageSteps {
 
 		@When("Admin clicks the edit icon")
 		public void admin_clicks_the_edit_icon() {
-		    // Write code here that turns the phrase above into concrete actions
-		    throw new io.cucumber.java.PendingException();
+			Assert.assertTrue(uspg.isEditRowButtonEnabled());
 		}
 
 		@Then("A popup with user details should appear")
@@ -199,32 +229,38 @@ public class UserPageSteps {
 
 		@Given("Admin triggers the user details popup by clicking the edit icon")
 		public void admin_triggers_the_user_details_popup_by_clicking_the_edit_icon() {
-		    // Write code here that turns the phrase above into concrete actions
-		    throw new io.cucumber.java.PendingException();
+		    uspg.clickEditUser();
 		}
 
 		@When("Admin updates the fields with valid values and clicks submit")
 		public void admin_updates_the_fields_with_valid_values_and_clicks_submit() {
-		    // Write code here that turns the phrase above into concrete actions
-		    throw new io.cucumber.java.PendingException();
+			uspg.clearFirstName();
+			uspg.addFirstName("Mark");
+			uspg.clearLastName();
+			   uspg.addLastName("ddd");
+			   uspg.clearMiddleName();
+			   uspg.addMiddleName("fff");
+			   uspg.addRoleStatus();
+			   uspg.addselVisaStatus();
+			   uspg.clickSubmitBtn();
 		}
 
 		@Then("The updated user details should be reflected in the data table")
 		public void the_updated_user_details_should_be_reflected_in_the_data_table() {
-		    // Write code here that turns the phrase above into concrete actions
-		    throw new io.cucumber.java.PendingException();
+			Assert.assertFalse(uspg.CheckUserExistInTable("Mark"));
 		}
 
 		@When("Admin updates fields with invalid values and clicks submit")
 		public void admin_updates_fields_with_invalid_values_and_clicks_submit() {
-		    // Write code here that turns the phrase above into concrete actions
-		    throw new io.cucumber.java.PendingException();
+			uspg.clearEmail();
+			uspg.addtxtEmail("WRONG_INPUT_NO_EMAIL");
+			uspg.clickSubmitBtn();
 		}
 
 		@When("Admin erases data from a mandatory field and clicks submit")
 		public void admin_erases_data_from_a_mandatory_field_and_clicks_submit() {
-		    // Write code here that turns the phrase above into concrete actions
-		    throw new io.cucumber.java.PendingException();
+			uspg.clearFirstName();
+			   uspg.clickSubmitBtn();
 		}
 
 		@When("Admin erases data from the description field and clicks submit")
@@ -241,12 +277,6 @@ public class UserPageSteps {
 
 		@Given("Admin is on the dashboard page")
 		public void admin_is_on_the_dashboard_page() {
-		    // Write code here that turns the phrase above into concrete actions
-		    throw new io.cucumber.java.PendingException();
-		}
-
-		@Given("Admin has navigated to {string} from the navigation bar")
-		public void admin_has_navigated_to_from_the_navigation_bar(String string) {
 		    // Write code here that turns the phrase above into concrete actions
 		    throw new io.cucumber.java.PendingException();
 		}

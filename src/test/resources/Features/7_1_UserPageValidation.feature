@@ -3,7 +3,7 @@ Feature: User Page Validation
 Background:
   Given Admin is logged on the LMS portal
   And Admin is on the dashboard page after Login
-  When Admin clicks "User" from navigation bar
+  When Admin clicks User from the navigation bar
 
 Scenario: Validate landing in User page
   Then Admin should see "Manage User" in the URL
@@ -20,7 +20,7 @@ Scenario: Validate data table headers in the User Page
 Scenario: Validate Delete button in User Page
   Then Admin should see a Delete icon button that is disabled
 
-Scenario: Validate "+ A New user" button in User Page
+Scenario: Validate "+ Add New user" button in User Page
   Then Admin should see the "+ A New User" button
 
 Scenario: Validate "+ Assign staff" button in User page

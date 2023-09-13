@@ -10,6 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 import com.Utils.ConfigReader;
 import com.Utils.Sleep;
@@ -158,6 +159,10 @@ public boolean isEditRowButtonEnabled() {
 	return userDetailsRows.get(0).findElement(By.className("editIcon")).isEnabled();
 }
 
+public void clickEditUser() {
+	userDetailsRows.get(0).findElement(By.className("editIcon")).click();
+}
+
 @FindBy(xpath = "//table/rowHeaders")
 WebElement userHeaderRow;
 
@@ -195,61 +200,170 @@ public boolean isUserDetailPopupDisplayed() {
     }
 }
 
+public boolean isTextBoxNotDisplayedInPopup(String textBoxId) {
+	 WebElement textBox = driver.findElement(By.id(textBoxId));
+    	 return (textBox == null || !textBox.isDisplayed());
+}
+
+public boolean isDropdownNotDisplayedInPopup(String selectId) {
+	WebElement dropDown = driver.findElement(By.id(selectId));
+   	 return (dropDown == null || !dropDown.isDisplayed());
+}
+
 @FindBy(linkText = "User details")
 WebElement txtUserDetailsHeader;
 
 @FindBy(id = "idFName")
 WebElement txtFName;
 
+public void addFirstName(String fName) {
+	txtFName.sendKeys(fName);
+}
+
+public void clearFirstName() {
+	txtFName.clear();
+}
+
 @FindBy(id = "idMName")
 WebElement txtMName;
+
+public void addMiddleName(String mName) {
+	txtMName.sendKeys(mName);
+}
+
+public void clearMiddleName() {
+		txtMName.clear();
+	}
+
 
 @FindBy(id = "idLName")
 WebElement txtLName;
 
+public void addLastName(String lName) {
+	txtLName.sendKeys(lName);
+}
+
+public void clearLastName() {
+	txtLName.clear();
+}
+
 @FindBy(id = "idLocation")
 WebElement txtLocation;
+
+public void addLocation(String value) {
+	txtLocation.sendKeys(value);
+}
 
 @FindBy(id = "idPhone")
 WebElement txtPhone;
 
+public void addtxtPhone(String value) {
+	txtPhone.sendKeys(value);
+}
+
 @FindBy(id = "idLinkedInURL")
 WebElement txtLinkedInURL;
+
+public void addtxtLinkedInURL(String value) {
+	txtLinkedInURL.sendKeys(value);
+}
 
 @FindBy(id = "idUserRole")
 WebElement selUserRole;
 
+public void addUserRole() {
+	Select userRoleDropdown = new Select(selUserRole);
+	userRoleDropdown.deselectByIndex(1);
+}
+
 @FindBy(id = "error")
 WebElement txtError;
+
+public boolean isErrorDisplayed() {
+	return txtError.isDisplayed();
+}
 
 @FindBy(id = "idRoleStatus")
 WebElement selRoleStatus;
 
+public void addRoleStatus() {
+	Select roleStatusDropdown = new Select(selRoleStatus);
+	roleStatusDropdown.deselectByIndex(1);
+}
+
 @FindBy(id = "idVisaStatus")
 WebElement selVisaStatus;
+
+public void addselVisaStatus() {
+	Select visaStatusDropdown = new Select(selVisaStatus);
+	visaStatusDropdown.deselectByIndex(1);
+}
 
 @FindBy(id = "idEmail")
 WebElement txtEmail;
 
+public void addtxtEmail(String value) {
+	txtEmail.sendKeys(value);
+}
+
+public void clearEmail() {
+	txtEmail.clear();
+}
+
 @FindBy(id = "idUnderGrad")
 WebElement txtUnderGrad;
+
+public void addtxtUnderGrad(String value) {
+	txtUnderGrad.sendKeys(value);
+}
 
 @FindBy(id = "idPostGrad")
 WebElement txtPostGrad;
 
+public void addtxtPostGrad(String value) {
+	txtPostGrad.sendKeys(value);
+}
+
 @FindBy(id = "idTimezone")
 WebElement txtTimeZone;
+
+public void addtxtTimeZone(String value) {
+	txtTimeZone.sendKeys(value);
+}
 
 @FindBy(id = "idUserComments")
 WebElement txtUserComments;
 
+public void addtxtUserComments(String value) {
+	txtUserComments.sendKeys(value);
+}
+
 @FindBy(id = "btnCancel")
 WebElement btnCancel;
+
+public void clickCancelBtn() {
+	btnCancel.click();
+}
 
 @FindBy(id = "btnDelYes")
 WebElement btnDelYes;
 
+public void clickYesBtn() {
+	btnCancel.click();
+}
+
 @FindBy(id = "btnDelNo")
 WebElement btnDelNo;
+
+public void clickDelBtn() {
+	btnDelNo.click();
+}
+
+@FindBy(id = "btnSubmit")
+WebElement btnSubmit;
+
+public void clickSubmitBtn() {
+	btnSubmit.click();
+}
 
 }

@@ -24,16 +24,6 @@ public class StudentPageVerificationStep {
 
 	@Given("Admin is on the dashboard page after login")
 	public void admin_is_on_the_dashboard_page_after_login() {
-		// open dashboard url
-		dashboardPage.visit_LMS_url();
-		// click login
-		dashboardPage.clickMainPageLogin_btn();
-		// enter u/pswd
-		dashboardPage.enterUsername(ConfigReader.getUserName());
-		dashboardPage.enterPassword(ConfigReader.getPassword());
-		// click login
-		dashboardPage.clickLogin();
-		// click student link
 		Assert.assertEquals("Dashboard Page", dashboardPage.getCurrentPageTitle());
 	}
 
