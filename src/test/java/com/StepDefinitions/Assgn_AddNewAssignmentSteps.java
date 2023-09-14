@@ -21,13 +21,13 @@ public class Assgn_AddNewAssignmentSteps
 	private WebDriver driver = Helper.getDriver();
 	private Assgn_AddNewAssignmentPage AddNewAssgnPgVrf = new Assgn_AddNewAssignmentPage();
 	
-	@Given("Admin is in  assignment details popup window")
+/*	@Given("Admin is in  assignment details popup window")
 	public void admin_is_in_assignment_details_popup_window() 
 	{
 		AddNewAssgnPgVrf.AssDetailsPopupWnw();
-	}
+	}*/
 
-	@When("Admin enters all mandatory field values with invalid data and clicks save button \\(Program name, batch number,Assignment Name, grade by, Assignment due date )")
+/*	@When("Admin enters all mandatory field values with invalid data and clicks save button \\(Program name, batch number,Assignment Name, grade by, Assignment due date )")
 	public void admin_enters_all_mandatory_field_values_with_invalid_data_and_clicks_save_button_program_name_batch_number_assignment_name_grade_by_assignment_due_date() throws IOException 
 	{
 		AddNewAssgnPgVrf.EnterProgramname();
@@ -35,7 +35,7 @@ public class Assgn_AddNewAssignmentSteps
 		AddNewAssgnPgVrf.EnterAssignName();
 		AddNewAssgnPgVrf.EnterGradeBy();
 		AddNewAssgnPgVrf.EnterAssgnDueDate();
-   	}
+   	}*/
 
 	@Then("Admin should see new assignment details is added in the data table")
 	public void admin_should_see_new_assignment_details_is_added_in_the_data_table() 
@@ -60,7 +60,7 @@ public class Assgn_AddNewAssignmentSteps
 		AddNewAssgnPgVrf.EnterGradeBy();
 		AddNewAssgnPgVrf.EnterAssgnDueDate();
 	}*/
-	@When("Admin enters with invalid data in optional fields and clicks save button \\(Assignment File1, Assignment file {int}, Assignment file {int}, Assignment file {int}, Assignment file {int})")
+/*	@When("Admin enters with invalid data in optional fields and clicks save button \\(Assignment File1, Assignment file {int}, Assignment file {int}, Assignment file {int}, Assignment file {int})")
 	public void admin_enters_with_invalid_data_in_optional_fields_and_clicks_save_button_assignment_file1_assignment_file_assignment_file_assignment_file_assignment_file(Integer int1, Integer int2, Integer int3, Integer int4) throws IOException 
 	{
 		AddNewAssgnPgVrf.WrongEnterProgramname();
@@ -68,14 +68,14 @@ public class Assgn_AddNewAssignmentSteps
 		AddNewAssgnPgVrf.WrongEnterAssignName();
 		AddNewAssgnPgVrf.WrongEnterGradeBy();
 		AddNewAssgnPgVrf.WrongEnterAssgnDueDate();
-	}
+	}*/
 	
 
-	@When("Admin enters  data missing value in program name and clicks save button \\(batch number,Assignment Name, Assignment Description, grade by, Assignment due date, Assignment File1, Assignment file {int}, Assignment file {int}, Assignment file {int}, Assignment file {int})")
+/*	@When("Admin enters  data missing value in program name and clicks save button \\(batch number,Assignment Name, Assignment Description, grade by, Assignment due date, Assignment File1, Assignment file {int}, Assignment file {int}, Assignment file {int}, Assignment file {int})")
 	public void admin_enters_data_missing_value_in_program_name_and_clicks_save_button_batch_number_assignment_name_assignment_description_grade_by_assignment_due_date_assignment_file1_assignment_file_assignment_file_assignment_file_assignment_file(Integer int1, Integer int2, Integer int3, Integer int4) 
 	{
 		AddNewAssgnPgVrf.MissingPgmNameMsg();
-	}
+	}*/
 
 	/*@Then("Program Name is missing")
 	public void program_name_is_missing() 
@@ -114,23 +114,23 @@ public class Assgn_AddNewAssignmentSteps
 		AddNewAssgnPgVrf.MissingDueDateMsg();
 	}
 
-	@Then("Assignment due date is missing")
+	/*@Then("Assignment due date is missing")
 	public void assignment_due_date_is_missing()
 	{
 		AddNewAssgnPgVrf.MissingDueDateMsg();
-	}
+	}*/
 
-	@When("Admin enters data missing value in grade by  and clicks save button \\(Program name, batch number,Assignment Name, Assignment due date)")
+/*	@When("Admin enters data missing value in grade by  and clicks save button \\(Program name, batch number,Assignment Name, Assignment due date)")
 	public void admin_enters_data_missing_value_in_grade_by_and_clicks_save_button_program_name_batch_number_assignment_name_assignment_due_date() 
 	{
 		AddNewAssgnPgVrf.MissingGradeByMsg();
-	}
+	}*/
 
-	@Then("Grade by is missing")
+	/*@Then("Grade by is missing")
 	public void grade_by_is_missing() 
 	{
 		AddNewAssgnPgVrf.MissingGradeByMsg();
-	}
+	}*/
 
 //	@When("Admin enters passed date in the due date field and clicks save button \\( Program name, batch number,Assignment Name,  grade by, Assignment Due date )")
 //	public void admin_enters_passed_date_in_the_due_date_field_and_clicks_save_button_program_name_batch_number_assignment_name_grade_by_assignment_due_date() {

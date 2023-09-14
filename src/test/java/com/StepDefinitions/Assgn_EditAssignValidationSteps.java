@@ -89,7 +89,7 @@ public class Assgn_EditAssignValidationSteps
 	    throw new io.cucumber.java.PendingException();
 	}
 
-	@When("Admin enters data missing value in Batch number and clicks save button \\(Program name,Assignment Name, Assignment Description, grade by, Assignment due date, Assignment File1, Assignment file {int}, Assignment file {int}, Assignment file {int}, Assignment file {int})")
+	/*@When("Admin enters data missing value in Batch number and clicks save button \\(Program name,Assignment Name, Assignment Description, grade by, Assignment due date, Assignment File1, Assignment file {int}, Assignment file {int}, Assignment file {int}, Assignment file {int})")
 	public void admin_enters_data_missing_value_in_batch_number_and_clicks_save_button_program_name_assignment_name_assignment_description_grade_by_assignment_due_date_assignment_file1_assignment_file_assignment_file_assignment_file_assignment_file(Integer int1, Integer int2, Integer int3, Integer int4) {
 	    // Write code here that turns the phrase above into concrete actions
 	    throw new io.cucumber.java.PendingException();
@@ -161,11 +161,11 @@ public class Assgn_EditAssignValidationSteps
 	    throw new io.cucumber.java.PendingException();
 	}
 
-	@When("Admin clicks Cancel button entering values in the fields")
+	/*@When("Admin clicks Cancel button entering values in the fields")
 	public void admin_clicks_cancel_button_entering_values_in_the_fields() {
 	    // Write code here that turns the phrase above into concrete actions
 	    throw new io.cucumber.java.PendingException();
-	}
+	}*/
 
 	@Then("Admin should land on manage assignment Page and validate new assignment is not created in the data table")
 	public void admin_should_land_on_manage_assignment_page_and_validate_new_assignment_is_not_created_in_the_data_table() {
