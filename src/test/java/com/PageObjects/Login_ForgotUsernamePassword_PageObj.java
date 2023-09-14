@@ -10,7 +10,7 @@ import com.Utils.BaseClass;
 
 public class Login_ForgotUsernamePassword_PageObj extends BaseClass {
 	
-	
+WebDriver driver;	
 	 
 	public Login_ForgotUsernamePassword_PageObj(WebDriver driver) {
 		super(driver);
@@ -37,10 +37,10 @@ public void fruspa() {                           //this forgot is from login pag
 }
 public void emailgray() {
 String script = "arguments[0].style.color='gray';";
-((JavascriptExecutor) driver).executeScript(script,);
+((JavascriptExecutor) driver).executeScript(script);
 
 
-
+}
 	
 	public void forusepass() {    //this forgot is from forgot page
 		forgotup.click();

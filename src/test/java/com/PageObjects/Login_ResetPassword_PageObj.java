@@ -4,7 +4,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class Login_ResetPassword_PageObj extends BasePage{
+import com.Utils.BaseClass;
+
+public class Login_ResetPassword_PageObj extends BaseClass{
 
 	public Login_ResetPassword_PageObj(WebDriver driver) {
 		super(driver);

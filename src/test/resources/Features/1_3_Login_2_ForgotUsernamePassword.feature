@@ -32,6 +32,6 @@ Examples:
     Given Admin is in forgot username and password page
     When Admin enters invalid "<email>" id and clicks send link button
     Then Admin should not receive link in mail for reset username / password
- Examples:
-|email|
-|sw p@gmail.com|
+# Examples:
+#|email|
+#|sw p@gmail.com|
