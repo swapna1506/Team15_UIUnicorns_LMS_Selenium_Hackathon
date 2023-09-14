@@ -4,7 +4,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class Login_HomePageVerification_PageObj extends BasePage {
+import com.Utils.BaseClass;
+
+public class Login_HomePageVerification_PageObj extends BaseClass {
 	
 	public Login_HomePageVerification_PageObj(WebDriver driver) 
 	{

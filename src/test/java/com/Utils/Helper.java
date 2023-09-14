@@ -52,11 +52,11 @@ public class Helper {
 		return driver;
 	}
 
-	public static WebDriver setUpDriver() {
+	public static void setUpDriver() {
 		if (Helper==null) {
 			Helper = new Helper();
 		}
-		return driver;
+		
 	}
 	public static void tearDown() {
 		if(driver!=null) {

@@ -8,7 +8,7 @@ import org.openqa.selenium.support.FindBy;
 
 import com.Utils.BaseClass;
 
-public class Login_ForgotUsernamePassword_PageObj extends BasePage{
+public class Login_ForgotUsernamePassword_PageObj extends BaseClass {
 	
 	
 	 

@@ -6,7 +6,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class Login_LoginPageVerification_PageObj extends BasePage {
+import com.Utils.BaseClass;
+
+public class Login_LoginPageVerification_PageObj extends BaseClass {
 WebDriver driver;
 	public Login_LoginPageVerification_PageObj(WebDriver driver) {
 		super(driver);

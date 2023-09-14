@@ -11,7 +11,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class Batch_BatchPageValidation_PageObj extends BasePage{
+import com.Utils.BaseClass;
+
+public class Batch_BatchPageValidation_PageObj extends BaseClass{
 	
 	public Batch_BatchPageValidation_PageObj(WebDriver driver) {
 	super(driver);
