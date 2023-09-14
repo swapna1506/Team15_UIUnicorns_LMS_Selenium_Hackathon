@@ -9,12 +9,13 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.Utils.ConfigReader;
-import com.Utils.Sleep;
+import com.Utils.*;
 
 public class DashboardPage {
 
 	
 	private WebDriver driver;
+	private String url;
 	 String URL=ConfigReader.getApplicationUrl();
 	
 	 //constructor 

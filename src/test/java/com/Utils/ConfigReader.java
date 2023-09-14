@@ -7,29 +7,23 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
 
-import driverFactoryPkg.DriverFactory;
+//import driverFactoryPkg.DriverFactory;
 
 public class ConfigReader {
 	private static Properties properties;
 	private final static String propertyFilePath = "./src/test/resources/Config//config.properties";
 	private static String browserType = null;
 
-
-	public static Properties loadConfig() throws Throwable {
-
-
-	private static Properties prop=null;
-	
 	public static Properties init_properties()
 
 	{
-		  prop = new Properties();
+		  properties = new Properties();
 		  try 
 		  {
 		   FileInputStream ip = new FileInputStream("C:\\Users\\preet\\OneDrive\\Documents\\SeleniumProjects\\DSAlgoProject_new\\src\\test\\resources\\config\\config.properties");
 		   try 
 		   {
-		    prop.load(ip);
+		    properties.load(ip);
 		    ip.close();
 		   } 
 		   catch (IOException e) 
@@ -42,13 +36,14 @@ public class ConfigReader {
 		   e.printStackTrace();
 		  }
 
-		  return prop;
+		  return properties;
 		 }
 	
-	public static void loadConfig() throws Throwable {
-
-
   public static void loadConfig() throws Throwable {
+	  
+	//  private static Properties prop=null;
+	  
+	 
 
 
 		try {
@@ -60,13 +55,14 @@ public class ConfigReader {
 				fis.close();
 			} catch (IOException e) {
 				e.printStackTrace();
-			}
-		} catch (FileNotFoundException e) {
+			
+		} 
+		}catch (FileNotFoundException e) {
 			e.printStackTrace();
 			throw new RuntimeException("Configuration.properties not found at " + propertyFilePath);
 		}
-		return properties;
-	}
+		//return properties;
+		}
 	
 
 
@@ -125,13 +121,13 @@ public class ConfigReader {
 		return url;
 	}
 
-	
+
 	 public static String getInvocationMode() 
 	 {
-	 	if(prop==null)	
+	 	if(properties==null)	
 	 	init_properties();
 	 		
-	 	  String invocation_mode = prop.getProperty("invocation_mode");//System.out.println(invocation_mode);
+	 	  String invocation_mode = properties.getProperty("invocation_mode");//System.out.println(invocation_mode);
 	 	  if (invocation_mode != null)
 	 	   return invocation_mode;
 	 	  else
@@ -140,9 +136,9 @@ public class ConfigReader {
 	 
 	 public static String getUserName() 
 	 {
-		 if(prop==null)	
+		 if(properties==null)	
 				init_properties();
-	  String username = prop.getProperty("username");
+	  String username = properties.getProperty("username");
 	  if (username != null)
 	   return username;
 	  else
@@ -151,9 +147,9 @@ public class ConfigReader {
 	 
 	 public static String getPassword() 
 	 {
-		 if(prop==null)	
+		 if(properties==null)	
 				init_properties();
-	  String password = prop.getProperty("password");
+	  String password = properties.getProperty("password");
 	  if (password != null)
 	   return password;
 	  else

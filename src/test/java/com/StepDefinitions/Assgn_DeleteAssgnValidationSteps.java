@@ -15,17 +15,17 @@ public class Assgn_DeleteAssgnValidationSteps
 {
 	private Assgn_DeleteAssgnValidationPage deleteAssgn = new Assgn_DeleteAssgnValidationPage();
 
-	@Given("Admin is in manage assignment page")
+	/*@Given("Admin is in manage assignment page")
 	public void admin_is_in_manage_assignment_page() 
 	{
 		deleteAssgn.openLmlPortal();;
-	}
+	}*/
 
-	@When("Admin clicks delete button in data table row level")
+	/*@When("Admin clicks delete button in data table row level")
 	public void admin_clicks_delete_button_in_data_table_row_level() 
 	{
 		deleteAssgn.deleteButtonindatatable();
-	}
+	}*/
 
 	@Then("Admin should see dialog box")
 	public void admin_should_see_dialog_box() 
@@ -48,17 +48,17 @@ public class Assgn_DeleteAssgnValidationSteps
 		Assert.assertTrue(RejectBtn);
 	}
 
-	@Given("Admin is in delete alert")
+	/*@Given("Admin is in delete alert")
 	public void admin_is_in_delete_alert()
 	{
 		deleteAssgn.ShowDialogBox();
-	}
+	}*/
 
-	@When("Admin clicks yes button")
+	/*@When("Admin clicks yes button")
 	public void admin_clicks_yes_button() 
 	{
 		deleteAssgn.ClickYesBtn();
-	}
+	}*/
 	
 //
 //	@Then("Redirected to assignment page and selected assignment details are deleted from the data table")

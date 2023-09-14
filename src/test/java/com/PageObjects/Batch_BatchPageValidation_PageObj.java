@@ -12,6 +12,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import com.Utils.BaseClass;
+import com.Utils.Helper;
 
 public class Batch_BatchPageValidation_PageObj extends BaseClass{
 	
@@ -19,7 +20,8 @@ public class Batch_BatchPageValidation_PageObj extends BaseClass{
 	super(driver);
 		
 	}
-	WebDriver driver;
+	WebDriver driver = Helper.getDriver();
+	//WebDriver driver;
 	@FindBy(xpath="//a[text()='batch']")WebElement batch;
 	
 	 @FindBy(xpath = "//header[@id='header-id']") WebElement Header;
@@ -56,7 +58,9 @@ public class Batch_BatchPageValidation_PageObj extends BaseClass{
 	 
 	
 	
-	 public void batchClick()
+	
+
+	public void batchClick()
 		{
 			batch.click();
 		}

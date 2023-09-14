@@ -18,6 +18,11 @@ import io.cucumber.java.en.When;
 
 public class AttendanceDetails1StepDef extends BaseClass {
 	
+	public AttendanceDetails1StepDef(WebDriver webDriver) {
+		super(webDriver);
+		// TODO Auto-generated constructor stub
+	}
+
 	WebDriver driver = Helper.getDriver();
 	
 	

@@ -20,6 +20,11 @@ import com.PageObjects.*;
 public class DeleteMultipleAttendanceStepDef extends BaseClass{
 	
 
+	public DeleteMultipleAttendanceStepDef(WebDriver webDriver) {
+		super(webDriver);
+		// TODO Auto-generated constructor stub
+	}
+
 	WebDriver driver = Helper.getDriver();
 	
 	

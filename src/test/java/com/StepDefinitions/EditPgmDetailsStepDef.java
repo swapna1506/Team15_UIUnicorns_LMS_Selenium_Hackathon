@@ -1,12 +1,11 @@
 package com.StepDefinitions;
-package com.pages;
-import com.qa.factory.*;
-import com.qa.util.*;
+import org.openqa.selenium.WebDriver;
+
+import com.Utils.*;
+
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.*;
-import com.qa.factory.DriverFactory;
-import com.qa.util.LoggerLoad;
-import com.qa.util.ConfigReader;
+
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -19,7 +18,7 @@ public class EditPgmDetailsStepDef {
 
     WebDriver driver;
     ConfigReader CR = new ConfigReader();
-    Properties prop = CR.init_prop();
+    Properties prop = CR.init_properties();
     @FindBy(id = "EditButton")
     WebElement editBtn;
     @FindBy(xpath = "//*[@id= 'popup-heading']")
@@ -38,7 +37,7 @@ public class EditPgmDetailsStepDef {
                 String popupheadingText = popupheading.getText();
                 String expectedheading = "Assignment Details";
                 Assert.assertEquals(expectedheading, popupheadingText);
-                LoggerLoad.info("Popup window is displayed");
+               
 
             }
         }
@@ -133,4 +132,4 @@ public class EditPgmDetailsStepDef {
 
 
 
-}
+

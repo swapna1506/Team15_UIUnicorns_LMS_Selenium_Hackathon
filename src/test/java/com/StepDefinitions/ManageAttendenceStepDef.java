@@ -28,6 +28,11 @@ public class ManageAttendenceStepDef extends BaseClass {
 	
 	
 	
+	public ManageAttendenceStepDef(WebDriver webDriver) {
+		super(webDriver);
+		// TODO Auto-generated constructor stub
+	}
+
 	WebDriver driver = Helper.getDriver();
 	ManageAttendence mp = new ManageAttendence(driver);
 	

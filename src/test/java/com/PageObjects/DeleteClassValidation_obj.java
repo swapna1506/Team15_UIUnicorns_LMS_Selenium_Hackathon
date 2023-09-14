@@ -16,6 +16,8 @@ import static org.junit.Assert.assertTrue;
 
 public class DeleteClassValidation_obj extends BaseClass {
 	
+	
+
 	WebDriver driver = Helper.getDriver();
 	
 	//WebDriver driver = com.lms.ui.driver.DriverFactory.getDriver();

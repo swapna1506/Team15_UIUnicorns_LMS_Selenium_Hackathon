@@ -13,6 +13,11 @@ import io.cucumber.java.en.When;
 
 public class PaginationAttendanceStepDef extends BaseClass{
 	
+	public PaginationAttendanceStepDef(WebDriver webDriver) {
+		super(webDriver);
+		// TODO Auto-generated constructor stub
+	}
+
 	WebDriver driver = Helper.getDriver();
 	
 	

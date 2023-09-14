@@ -1,5 +1,6 @@
 package com.StepDefinitions;
-package com.pages;
+/*package com.pages;
+import com.Utils.Helper;
 import com.qa.factory.*;
 import io.cucumber.java.en.*;
 import org.junit.*;
@@ -11,16 +12,16 @@ import org.openqa.selenium.support.*;
 
 import java.util.*;
 public class SortingValidationStepDef { {
-    WebDriver driver;
+	WebDriver driver = Helper.getDriver();
     ConfigReader CR = new ConfigReader();
     Properties prop = CR.init_prop();
 
     List<String> originaldata;
     List<String> expecteddata;
-    @FindBy(xpath = "//table[@id='data-table']/tbody/th[text()= 'Assignment Name']")
-    WebElement rowHeader;
+    WebElement rowHeader = driver.findElement(By.xpath("//table[@id='data-table']/tbody/th[text()= 'Assignment Name']"));
+    
     WebElement navigationBarElement = driver.findElement(By.cssSelector("ul.navigation-bar"));
-    WebElement prognamecol = driver.findElement(By.xpath("//table/th/name"));
+    //WebElement prognamecol = driver.findElement(By.xpath("//table/th/name"));
 
     public void navigation() {
 
@@ -85,8 +86,8 @@ public class SortingValidationStepDef { {
         expecteddata = new ArrayList<>(sortdatacol);
         Assert.assertEquals("The column assignment name is sorted in descending order", expecteddata, originaldata);
 
-    }
+    }*/
 
 
 
-}
+

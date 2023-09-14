@@ -41,10 +41,10 @@ public class AddNewClass_SD {
 	public void admin_enters_all_mandatory_field_values_with_invalid_data_and_clicks_save_button_and(String string, String string2) {
 	    objanw.savebtnclickmth();
 	}
-	@Then("Error message should appear in alert")
+/*	@Then("Error message should appear in alert")
 	public void error_message_should_appear_in_alert() {
 	    objanw.alertmsg();
-	}
+	}*/
 	@When("Admin enters values in all fields with valid data and clicks save button {string} and {string}")
 	public void admin_enters_values_in_all_fields_with_valid_data_and_clicks_save_button_and(String string, String string2) {
 		   objanw.savebtnclickmth();
@@ -97,18 +97,18 @@ public class AddNewClass_SD {
 	public void admin_clicks_date_from_date_picker() {
 		objanw.checkclasdtmsg();
 	}
-	@Then("selected date should be their in class date text box")
+	/*@Then("selected date should be their in class date text box")
 	public void selected_date_should_be_their_in_class_date_text_box() {
 		objanw.checkclasdtmsg();
-	}
+	}*/
 	@Then("selected date should be in  mm\\/dd\\/yyyy format")
 	public void selected_date_should_be_in_mm_dd_yyyy_format() {
 		objanw.checkclasdtmsg();
 	}
-	@When("Admin clicks right arrow in the date picker near month")
+	/*@When("Admin clicks right arrow in the date picker near month")
 	public void admin_clicks_right_arrow_in_the_date_picker_near_month() {
 		objanw.checkclasdtmsg();
-	}
+	}*/
 	@Then("Next month calender should visible")
 	public void next_month_calender_should_visible() {
 		objanw.checkclasdtmsg();
@@ -125,22 +125,22 @@ public class AddNewClass_SD {
 	public void admin_clicks_date_picker_button() {
 	    objanw.datepickerclickmeth();
 	}
-	@Then("Admin should see current date is highled in the date picker")
+	/*@Then("Admin should see current date is highled in the date picker")
 	public void admin_should_see_current_date_is_highled_in_the_date_picker() {
 		objanw.checkclasdtmsg();
-	}
+	}*/
 	@When("Admin clicks date picker button and selects future date")
 	public void admin_clicks_date_picker_button_and_selects_future_date() {
 		objanw.checkclasdtmsg();
 	}
-	@Then("Admin should see selected date is highled in the date picker")
+	/*@Then("Admin should see selected date is highled in the date picker")
 	public void admin_should_see_selected_date_is_highled_in_the_date_picker() {
 		objanw.checkclasdtmsg();
-	}
-	@When("Admin clicks Cancel button without entering values in the fields")
+	}*/
+	/*@When("Admin clicks Cancel button without entering values in the fields")
 	public void admin_clicks_cancel_button_without_entering_values_in_the_fields() {
 	    objanw.cancelclkmeth();
-	}
+	}*/
 	@Then("Admin should land on Manage Class page")
 	public void admin_should_land_on_manage_class_page() {
 	}

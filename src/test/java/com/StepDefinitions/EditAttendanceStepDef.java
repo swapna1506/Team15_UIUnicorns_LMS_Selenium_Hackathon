@@ -16,6 +16,11 @@ import io.cucumber.java.en.When;
 import com.PageObjects.*;
 public class EditAttendanceStepDef extends BaseClass{
 	
+	public EditAttendanceStepDef(WebDriver webDriver) {
+		super(webDriver);
+		// TODO Auto-generated constructor stub
+	}
+
 	WebDriver driver = Helper.getDriver();
 	
 	

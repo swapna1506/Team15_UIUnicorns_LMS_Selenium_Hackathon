@@ -18,11 +18,7 @@ public class Assgn_PaginatonInAssgSteps
 	    throw new io.cucumber.java.PendingException();
 	}
 
-	@Then("Data table should display {int} page  when entries available")
-	public void data_table_should_display_page_when_entries_available(Integer int1) {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
+	
 
 	@Then("Right arrow should be enabled in page one  when entries are more than {int} available")
 	public void right_arrow_should_be_enabled_in_page_one_when_entries_are_more_than_available(Integer int1) {

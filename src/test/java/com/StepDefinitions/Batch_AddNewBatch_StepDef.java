@@ -19,8 +19,8 @@ public class Batch_AddNewBatch_StepDef {
 	//background
 	@Given("Logged on the LMS portal.Admin is on dashboard page after Login")
 	public void logged_on_the_lms_portal_admin_is_on_dashboard_page_after_login() {
-		Helper.driver.get(ConfigReader.getApplicationUrl("url"));
-		Helper.driver.get(ConfigReader.getApplicationUrl("dashboard_url"));
+		Helper.driver.get(ConfigReader.getApplicationUrl());
+		Helper.driver.get(ConfigReader.getApplicationUrl());
 		
 	}
 	//scenarios

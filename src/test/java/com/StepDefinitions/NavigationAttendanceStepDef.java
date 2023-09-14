@@ -18,6 +18,11 @@ import junit.framework.Assert;
 
 import com.PageObjects.*;
 public class NavigationAttendanceStepDef extends BaseClass {
+	public NavigationAttendanceStepDef(WebDriver webDriver) {
+		super(webDriver);
+		// TODO Auto-generated constructor stub
+	}
+
 	WebDriver driver = Helper.getDriver();
 	
 	

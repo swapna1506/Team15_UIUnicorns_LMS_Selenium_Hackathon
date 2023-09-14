@@ -9,17 +9,18 @@ import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.Utils.BaseClass;
 import com.Utils.ExcelReader;
 import com.Utils.Helper;
 
 import junit.framework.Assert;
 
-public class AddNewAttendance  {
+public class AddNewAttendance   {
 	static ExcelReader excelUtils = new ExcelReader();
 	 static String excelFilePath = ".\\src\\test\\resources\\ExcelData\\Team15_UIUnicorns_DataExcel.xlsx";
 	WebDriver driver = Helper.getDriver();
-	AttendanceDetails adp = new AttendanceDetails(driver);
-	ManageAttendence mp =new ManageAttendence(Helper.getDriver());
+/*	AttendanceDetails adp = new AttendanceDetails(driver);
+	ManageAttendence mp =new ManageAttendence(Helper.getDriver());*/
 	public AddNewAttendance(WebDriver webDriver) {
 		PageFactory.initElements(webDriver,this);
 	}

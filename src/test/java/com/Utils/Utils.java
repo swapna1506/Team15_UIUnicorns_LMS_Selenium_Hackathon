@@ -1,7 +1,7 @@
 
  package com.Utils;
 
-package com.Utils;
+
 
 
 import java.time.Duration;
@@ -12,32 +12,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-public class Utils 
-{
-
-
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.openqa.selenium.WebDriver;
-
-import java.io.IOException;
-import java.time.Duration;
-import java.util.Map;
-import java.util.Random;
-import java.util.Map;
-import java.util.Random;
-import java.util.List;
-
-import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.Select;
 
 public class Utils {
 	

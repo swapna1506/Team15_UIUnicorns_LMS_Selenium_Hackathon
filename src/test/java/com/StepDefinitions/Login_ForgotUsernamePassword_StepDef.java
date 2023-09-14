@@ -19,7 +19,7 @@ public class Login_ForgotUsernamePassword_StepDef {
 	
 	@Given("Admin is in login page")
 	public void admin_is_in_login_page() {
-	   Helper.driver.get(ConfigReader.getApplicationUrl("lgn_url"));
+	   Helper.driver.get(ConfigReader.getApplicationUrl());
 	}
 
 	@When("Admin clicks forgot username or password link")
@@ -68,7 +68,7 @@ public class Login_ForgotUsernamePassword_StepDef {
 	
 		@Given("Admin Clicks forgot username and password after reaching login page")
 		public void admin_clicks_forgot_username_and_password_after_reaching_login_page() {
-		   Helper.driver.get(ConfigReader.getApplicationUrl("lgn_url"));
+		   Helper.driver.get(ConfigReader.getApplicationUrl());
 		   lf.fruspa();
 		}
 		
@@ -76,7 +76,7 @@ public class Login_ForgotUsernamePassword_StepDef {
 		
 		@Given("Admin is in forgot username and password page")
 		public void admin_is_in_forgot_username_and_password_page() {
-			 Helper.driver.get(ConfigReader.getApplicationUrl("forgot_url"));  
+			 Helper.driver.get(ConfigReader.getApplicationUrl());  
 		}
 
 		@When("Admin enters valid {string} id and clicks send link button")
@@ -86,7 +86,7 @@ public class Login_ForgotUsernamePassword_StepDef {
 		}
 		@Then("Admin should receive link in mail for reset username \\/ password")
 		public void admin_should_receive_link_in_mail_for_reset_username_password() {
-			 Helper.driver.get(ConfigReader.getApplicationUrl("forgot_url"));
+			 Helper.driver.get(ConfigReader.getApplicationUrl());
 			 String fup=lf.forgot();
 			    Assert.assertEquals(fup,"forgot username or password page");
 			
@@ -101,7 +101,7 @@ public class Login_ForgotUsernamePassword_StepDef {
 
 		@Then("Admin should not receive link in mail for reset username \\/ password")
 		public void admin_should_not_receive_link_in_mail_for_reset_username_password() {
-			Helper.driver.get(ConfigReader.getApplicationUrl("forgot_url"));
+			Helper.driver.get(ConfigReader.getApplicationUrl());
 			 String fup=lf.forgot();
 			    Assert.assertEquals(fup,"forgot username or password page");
 		}

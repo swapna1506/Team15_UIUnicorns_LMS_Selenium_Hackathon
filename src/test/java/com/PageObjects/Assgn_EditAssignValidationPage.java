@@ -24,7 +24,7 @@ public class Assgn_EditAssignValidationPage
 	}
 	public void EditAssgPopupwdw()
 	{
-		driver.getWindowHandle().;
+		driver.getWindowHandle();
 	}
 
 }

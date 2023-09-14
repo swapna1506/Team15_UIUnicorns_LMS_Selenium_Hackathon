@@ -14,6 +14,11 @@ import io.cucumber.java.en.When;
 import junit.framework.Assert;
 
 public class AttendanceDetailsStepDef extends BaseClass {
+	public AttendanceDetailsStepDef(WebDriver webDriver) {
+		super(webDriver);
+		// TODO Auto-generated constructor stub
+	}
+
 	WebDriver driver = Helper.getDriver();
 
 	

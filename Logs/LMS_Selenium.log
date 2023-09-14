@@ -5546,3 +5546,79 @@
 [INFO ] 2023-09-12 21:57:58.728 [main] Loggerload - -----------------------------------------------------------------------------------------------
 [ERROR] 2023-09-12 21:57:58.730 [main] Loggerload - Steps Failed , Taking Screenshot
 [INFO ] 2023-09-12 21:57:58.980 [main] Loggerload - Closing Driver
+[INFO ] 2023-09-14 10:27:34.755 [main] Loggerload - Loading Config file
+[INFO ] 2023-09-14 10:27:34.758 [main] Loggerload - Get property BrowserType
+[INFO ] 2023-09-14 10:27:34.758 [main] Loggerload - Initializing driver for : chrome
+[INFO ] 2023-09-14 10:27:34.903 [main] Loggerload - Closing Driver
+[INFO ] 2023-09-14 10:47:01.997 [main] Loggerload - Loading Config file
+[INFO ] 2023-09-14 10:47:02.001 [main] Loggerload - Get property BrowserType
+[INFO ] 2023-09-14 10:47:02.002 [main] Loggerload - Initializing driver for : chrome
+[INFO ] 2023-09-14 10:47:02.098 [main] Loggerload - Closing Driver
+[INFO ] 2023-09-14 10:49:03.421 [main] Loggerload - Loading Config file
+[INFO ] 2023-09-14 10:49:03.425 [main] Loggerload - Get property BrowserType
+[INFO ] 2023-09-14 10:49:03.426 [main] Loggerload - Initializing driver for : chrome
+[INFO ] 2023-09-14 10:49:03.526 [main] Loggerload - Closing Driver
+[INFO ] 2023-09-14 10:50:27.819 [main] Loggerload - Loading Config file
+[INFO ] 2023-09-14 10:50:27.823 [main] Loggerload - Get property BrowserType
+[INFO ] 2023-09-14 10:50:27.824 [main] Loggerload - Initializing driver for : chrome
+[INFO ] 2023-09-14 10:50:27.924 [main] Loggerload - Closing Driver
+[INFO ] 2023-09-14 10:51:02.038 [main] Loggerload - Loading Config file
+[INFO ] 2023-09-14 10:51:02.042 [main] Loggerload - Get property BrowserType
+[INFO ] 2023-09-14 10:51:02.043 [main] Loggerload - Initializing driver for : chrome
+[INFO ] 2023-09-14 10:51:02.144 [main] Loggerload - Closing Driver
+[INFO ] 2023-09-14 10:52:34.016 [main] Loggerload - Loading Config file
+[INFO ] 2023-09-14 10:52:34.020 [main] Loggerload - Get property BrowserType
+[INFO ] 2023-09-14 10:52:34.021 [main] Loggerload - Initializing driver for : chrome
+[INFO ] 2023-09-14 10:52:34.128 [main] Loggerload - Closing Driver
+[INFO ] 2023-09-14 10:53:23.416 [main] Loggerload - Loading Config file
+[INFO ] 2023-09-14 10:53:23.420 [main] Loggerload - Get property BrowserType
+[INFO ] 2023-09-14 10:53:23.420 [main] Loggerload - Initializing driver for : chrome
+[INFO ] 2023-09-14 10:53:23.528 [main] Loggerload - Closing Driver
+[INFO ] 2023-09-14 10:54:42.793 [main] Loggerload - Loading Config file
+[INFO ] 2023-09-14 10:54:42.797 [main] Loggerload - Get property BrowserType
+[INFO ] 2023-09-14 10:54:42.799 [main] Loggerload - Initializing driver for : chrome
+[INFO ] 2023-09-14 10:54:42.904 [main] Loggerload - Closing Driver
+[INFO ] 2023-09-14 10:56:19.293 [main] Loggerload - Loading Config file
+[INFO ] 2023-09-14 10:56:19.296 [main] Loggerload - Get property BrowserType
+[INFO ] 2023-09-14 10:56:19.297 [main] Loggerload - Initializing driver for : chrome
+[INFO ] 2023-09-14 10:56:19.403 [main] Loggerload - Closing Driver
+[INFO ] 2023-09-14 10:57:47.547 [main] Loggerload - Loading Config file
+[INFO ] 2023-09-14 10:57:47.552 [main] Loggerload - Get property BrowserType
+[INFO ] 2023-09-14 10:57:47.553 [main] Loggerload - Initializing driver for : chrome
+[INFO ] 2023-09-14 10:57:47.661 [main] Loggerload - Closing Driver
+[INFO ] 2023-09-14 10:58:17.020 [main] Loggerload - Loading Config file
+[INFO ] 2023-09-14 10:58:17.023 [main] Loggerload - Get property BrowserType
+[INFO ] 2023-09-14 10:58:17.024 [main] Loggerload - Initializing driver for : chrome
+[INFO ] 2023-09-14 10:58:17.136 [main] Loggerload - Closing Driver
+[INFO ] 2023-09-14 11:00:09.558 [main] Loggerload - Loading Config file
+[INFO ] 2023-09-14 11:00:09.562 [main] Loggerload - Get property BrowserType
+[INFO ] 2023-09-14 11:00:09.563 [main] Loggerload - Initializing driver for : chrome
+[INFO ] 2023-09-14 11:00:09.663 [main] Loggerload - Closing Driver
+[INFO ] 2023-09-14 11:01:10.260 [main] Loggerload - Loading Config file
+[INFO ] 2023-09-14 11:01:10.264 [main] Loggerload - Get property BrowserType
+[INFO ] 2023-09-14 11:01:10.265 [main] Loggerload - Initializing driver for : chrome
+[INFO ] 2023-09-14 11:01:10.382 [main] Loggerload - Closing Driver
+[INFO ] 2023-09-14 11:03:40.721 [main] Loggerload - Loading Config file
+[INFO ] 2023-09-14 11:03:40.726 [main] Loggerload - Get property BrowserType
+[INFO ] 2023-09-14 11:03:40.728 [main] Loggerload - Initializing driver for : chrome
+[INFO ] 2023-09-14 11:03:40.841 [main] Loggerload - Closing Driver
+[INFO ] 2023-09-14 11:04:37.444 [main] Loggerload - Loading Config file
+[INFO ] 2023-09-14 11:04:37.447 [main] Loggerload - Get property BrowserType
+[INFO ] 2023-09-14 11:04:37.448 [main] Loggerload - Initializing driver for : chrome
+[INFO ] 2023-09-14 11:04:37.558 [main] Loggerload - Closing Driver
+[INFO ] 2023-09-14 11:07:23.888 [main] Loggerload - Loading Config file
+[INFO ] 2023-09-14 11:07:23.892 [main] Loggerload - Get property BrowserType
+[INFO ] 2023-09-14 11:07:23.894 [main] Loggerload - Initializing driver for : chrome
+[INFO ] 2023-09-14 11:07:23.997 [main] Loggerload - Closing Driver
+[INFO ] 2023-09-14 11:08:37.335 [main] Loggerload - Loading Config file
+[INFO ] 2023-09-14 11:08:37.339 [main] Loggerload - Get property BrowserType
+[INFO ] 2023-09-14 11:08:37.340 [main] Loggerload - Initializing driver for : chrome
+[INFO ] 2023-09-14 11:08:37.439 [main] Loggerload - Closing Driver
+[INFO ] 2023-09-14 11:09:22.682 [main] Loggerload - Loading Config file
+[INFO ] 2023-09-14 11:09:22.686 [main] Loggerload - Get property BrowserType
+[INFO ] 2023-09-14 11:09:22.687 [main] Loggerload - Initializing driver for : chrome
+[INFO ] 2023-09-14 11:09:22.787 [main] Loggerload - Closing Driver
+[INFO ] 2023-09-14 11:10:17.718 [main] Loggerload - Loading Config file
+[INFO ] 2023-09-14 11:10:17.721 [main] Loggerload - Get property BrowserType
+[INFO ] 2023-09-14 11:10:17.722 [main] Loggerload - Initializing driver for : chrome
+[INFO ] 2023-09-14 11:10:17.831 [main] Loggerload - Closing Driver

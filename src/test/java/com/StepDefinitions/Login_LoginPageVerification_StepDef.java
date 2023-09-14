@@ -13,7 +13,7 @@ import com.PageObjects.Login_LoginPageVerification_PageObj;
 import com.Utils.ConfigReader;
 import com.Utils.ExcelReader;
 import com.Utils.Helper;
-
+import com.Utils.*;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -21,18 +21,20 @@ import io.cucumber.java.en.When;
 
 
 public class Login_LoginPageVerification_StepDef {
-	
+	static ExcelReader excelUtils = new ExcelReader();
+	 static String excelFilePath = ".\\src\\test\\resources\\ExcelData\\Team15_UIUnicorns_DataExcel.xlsx";
 	WebDriver driver = Helper.getDriver();
 	Login_LoginPageVerification_PageObj lp_1=new Login_LoginPageVerification_PageObj(driver);
 	Login_HomePageVerification_PageObj hppo= new Login_HomePageVerification_PageObj(driver);
-ExcelReader er=new ExcelReader();
+//ExcelReader er=new ExcelReader();
+//private int excelFilepath;
 
 	//FeatureFile:1_LOGINPAGEVERIFICATION
 	
 	//Scenario:Verify the login page
 	@Given("Admin is in home page")
 	public void admin_is_in_home_page() {
-		 Helper.driver.get(ConfigReader.getApplicationUrl("url")); 
+		 Helper.driver.get(ConfigReader.getApplicationUrl()); 
 	}
 	
 	
@@ -189,11 +191,13 @@ ExcelReader er=new ExcelReader();
 	
 	@When("Admin enter valid {string} {string} and clicks login button")
 	public void admin_enter_valid_and_clicks_login_button(String sheetname, int Testcase) throws InvalidFormatException, IOException {
-		List<Map<String,String>> testData= er.getData("src\\test\\java\\com\\Utils\\ExcelReader.java",sheetname);
+	/*	excelUtils.setExcelFile(login,2);
+		List<Map<String,String>> testData= excelUtils.getCellData(excelFilepath,sheetname);
+		
 		  String uname= testData.get(Testcase).get("username");
 		  String pword= testData.get(Testcase).get("password");
 		lp_1.sendvalues(uname, pword);
-	   lp_1.l();
+	   lp_1.l();*/
 	}
 
 	@Then("Admin should land on dashboard page")
@@ -204,11 +208,11 @@ ExcelReader er=new ExcelReader();
 
 	@When("Admin enter invalid {string} {string} and clicks login button")
 	public void admin_enter_invalid_and_clicks_login_button(String sheetname, int Testcase) throws InvalidFormatException, IOException {
-		List<Map<String,String>> testData= er.getData("src\\test\\java\\com\\Utils\\ExcelReader.java",sheetname);
+		/*List<Map<String,String>> testData= er.getCellData(1,2);
 		  String uname= testData.get(Testcase).get("username");
 		  String pword= testData.get(Testcase).get("password");
 		lp_1.sendvalues(uname, pword);
-		lp_1.l();
+		lp_1.l();*/
 	}
 
 	
@@ -227,11 +231,11 @@ ExcelReader er=new ExcelReader();
 
 	@When("Admin enter valid {string} {string} and clicks a login button")
 	public void admin_enter_valid_and_clicks_a_login_button(String sheetname, int Testcase) throws InvalidFormatException, IOException {
-		List<Map<String,String>> testData= er.getData("src\\test\\java\\com\\Utils\\ExcelReader.java",sheetname);
+		/*List<Map<String,String>> testData= er.getCellData("src\\test\\java\\com\\Utils\\ExcelReader.java",sheetname);
 		  String uname= testData.get(Testcase).get("username");
 		  String pword= testData.get(Testcase).get("password");
 		lp_1.sendvalues(uname, pword);
-		lp_1.l();
+		lp_1.l();*/
 	}
 
 	@Then("Error message please check username")
@@ -253,11 +257,11 @@ ExcelReader er=new ExcelReader();
 
 	@When("Admin clicks Login button with empty values in {string} {string} columns")
 	public void admin_clicks_login_button_with_empty_values_in_columns(String sheetname, int Testcase) throws InvalidFormatException, IOException {
-		List<Map<String,String>> testData= er.getData("src\\test\\java\\com\\Utils\\ExcelReader.java",sheetname);
+	/*	List<Map<String,String>> testData= er.getCellData("src\\test\\java\\com\\Utils\\ExcelReader.java",sheetname);
 		  String uname= testData.get(Testcase).get("username");
 		  String pword= testData.get(Testcase).get("password");
 		lp_1.sendvalues(uname, pword);
-		lp_1.l();
+		lp_1.l();*/
 	}
 
 	@When("Admin enter valid {string} {string} and clicks login button through keyboard")

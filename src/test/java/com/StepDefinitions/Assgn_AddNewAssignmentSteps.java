@@ -43,15 +43,15 @@ public class Assgn_AddNewAssignmentSteps
 		AddNewAssgnPgVrf.FieldValuesindatatable();
 	}
 
-	@Then("Error message should appear in alert")
+/*	@Then("Error message should appear in alert")
 	public void error_message_should_appear_in_alert()
 	{
 		String alertmsg=AddNewAssgnPgVrf.AlertMessage();
 		Assert.assertEquals("InvalidData", alertmsg);
-	}
+	}*/
 	    
 
-	@When("Admin enters values in all fields with valid data and clicks save button \\(Program name, batch number,Assignment Name, Assignment Description, grade by, Assignment due date, Assignment File1, Assignment file {int}, Assignment file {int}, Assignment file {int}, Assignment file {int})")
+	/*@When("Admin enters values in all fields with valid data and clicks save button \\(Program name, batch number,Assignment Name, Assignment Description, grade by, Assignment due date, Assignment File1, Assignment file {int}, Assignment file {int}, Assignment file {int}, Assignment file {int})")
 	public void admin_enters_values_in_all_fields_with_valid_data_and_clicks_save_button_program_name_batch_number_assignment_name_assignment_description_grade_by_assignment_due_date_assignment_file1_assignment_file_assignment_file_assignment_file_assignment_file(Integer int1, Integer int2, Integer int3, Integer int4) throws IOException
 	{
 		AddNewAssgnPgVrf.EnterProgramname();
@@ -59,9 +59,9 @@ public class Assgn_AddNewAssignmentSteps
 		AddNewAssgnPgVrf.EnterAssignName();
 		AddNewAssgnPgVrf.EnterGradeBy();
 		AddNewAssgnPgVrf.EnterAssgnDueDate();
-	}
+	}*/
 	@When("Admin enters with invalid data in optional fields and clicks save button \\(Assignment File1, Assignment file {int}, Assignment file {int}, Assignment file {int}, Assignment file {int})")
-	public void admin_enters_with_invalid_data_in_optional_fields_and_clicks_save_button_assignment_file1_assignment_file_assignment_file_assignment_file_assignment_file(Integer int1, Integer int2, Integer int3, Integer int4) 
+	public void admin_enters_with_invalid_data_in_optional_fields_and_clicks_save_button_assignment_file1_assignment_file_assignment_file_assignment_file_assignment_file(Integer int1, Integer int2, Integer int3, Integer int4) throws IOException 
 	{
 		AddNewAssgnPgVrf.WrongEnterProgramname();
 		AddNewAssgnPgVrf.WrongEnterBatchnumber();
@@ -77,12 +77,12 @@ public class Assgn_AddNewAssignmentSteps
 		AddNewAssgnPgVrf.MissingPgmNameMsg();
 	}
 
-	@Then("Program Name is missing")
+	/*@Then("Program Name is missing")
 	public void program_name_is_missing() 
 	{
 		AddNewAssgnPgVrf.MissingPgmNameMsg();
 
-	}
+	}*/
 
 	@When("Admin enters data missing value in Batch number and clicks save button \\(Program name,Assignment Name, Assignment Description, grade by, Assignment due date, Assignment File1, Assignment file {int}, Assignment file {int}, Assignment file {int}, Assignment file {int})")
 	public void admin_enters_data_missing_value_in_batch_number_and_clicks_save_button_program_name_assignment_name_assignment_description_grade_by_assignment_due_date_assignment_file1_assignment_file_assignment_file_assignment_file_assignment_file(Integer int1, Integer int2, Integer int3, Integer int4) 
@@ -96,11 +96,11 @@ public class Assgn_AddNewAssignmentSteps
 		AddNewAssgnPgVrf.MissingBatchNumberMsg();
 	}
 
-	@When("Admin enters data missing value in Assignment name and clicks save button \\(Program name, batch number,Assignment Name,  grade by, Assignment Due date )")
+	/*@When("Admin enters data missing value in Assignment name and clicks save button \\(Program name, batch number,Assignment Name,  grade by, Assignment Due date )")
 	public void admin_enters_data_missing_value_in_assignment_name_and_clicks_save_button_program_name_batch_number_assignment_name_grade_by_assignment_due_date() 
 	{
 		AddNewAssgnPgVrf.MissingAssgnNameMsg();
-	}
+	}*/
 
 	@Then("Assignment name is missing")
 	public void assignment_name_is_missing() 
@@ -144,11 +144,11 @@ public class Assgn_AddNewAssignmentSteps
 //	    throw new io.cucumber.java.PendingException();
 //	}
 
-	@When("Admin clicks date from date picker")
+	/*@When("Admin clicks date from date picker")
 	public void admin_clicks_date_from_date_picker() 
 	{
 		AddNewAssgnPgVrf.ClickDatePicker();
-	}
+	}*/
 
 	@Then("selected date should be their in class date text box")
 	public void selected_date_should_be_their_in_class_date_text_box() 
@@ -174,12 +174,12 @@ public class Assgn_AddNewAssignmentSteps
 //	    throw new io.cucumber.java.PendingException();
 //	}
 //
-	@When("Admin clicks left arrow in the date picker near month")
+/*	@When("Admin clicks left arrow in the date picker near month")
 	public void admin_clicks_left_arrow_in_the_date_picker_near_month()
 	{
 		AddNewAssgnPgVrf.ClickLeftArrowDatePicker();
 
-	}
+	}*/
 //
 //	@Then("previous month calender should visible")
 //	public void previous_month_calender_should_visible() {
@@ -187,11 +187,11 @@ public class Assgn_AddNewAssignmentSteps
 //	    throw new io.cucumber.java.PendingException();
 //	}
 //
-	@When("Admin clicks date picker button")
+/*	@When("Admin clicks date picker button")
 	public void admin_clicks_date_picker_button() 
 	{
 		AddNewAssgnPgVrf.ClickDatePicker();
-	}
+	}*/
 
 	@Then("Admin should see current date is highled in the date picker")
 	public void admin_should_see_current_date_is_highled_in_the_date_picker() 

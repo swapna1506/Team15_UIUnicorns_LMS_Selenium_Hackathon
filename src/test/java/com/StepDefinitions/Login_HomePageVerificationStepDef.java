@@ -27,7 +27,7 @@ public class Login_HomePageVerificationStepDef {
 
 	@When("Admin gives the correct LMS portal URL")
 	public void admin_gives_the_correct_lms_portal_url() {
-	 Helper.driver.get(ConfigReader.getApplicationUrl("url"));
+	 Helper.driver.get(ConfigReader.getApplicationUrl());
 	 
 	}
 
@@ -43,7 +43,7 @@ public class Login_HomePageVerificationStepDef {
 	
 	@When("Admin gives the invalid LMS portal URL")
 	public void admin_gives_the_invalid_lms_portal_url() {
-		 Helper.driver.get(ConfigReader.getApplicationUrl("inv_url"));
+		 Helper.driver.get(ConfigReader.getApplicationUrl());
 	} 
 
 	@Then("Admin should receive {int} page not found error")

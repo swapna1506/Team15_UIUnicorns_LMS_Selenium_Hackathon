@@ -15,6 +15,11 @@ import io.cucumber.java.en.When;
 import com.PageObjects.AddNewAttendance;
 
 public class AddNewAttendancestepDef extends BaseClass {
+	public AddNewAttendancestepDef(WebDriver webDriver) {
+		super(webDriver);
+		// TODO Auto-generated constructor stub
+	}
+
 	WebDriver driver = Helper.getDriver();
 	
 	@When("Admin fills all the values and click save")

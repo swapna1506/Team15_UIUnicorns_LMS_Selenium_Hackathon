@@ -21,14 +21,14 @@ public class Batch_BatchPageValidation_StepDef {
 	//background
 	@Given("Logged on the LMS portal")
 	public void logged_on_the_lms_portal() {
-	   Helper.driver.get(ConfigReader.getApplicationUrl("url"));
+	   Helper.driver.get(ConfigReader.getApplicationUrl());
 	}
 	
 	//scenarios
 	
 	@Given("Admin is on dashboard page after Login")
 	public void admin_is_on_dashboard_page_after_login() {
-		 Helper.driver.get(ConfigReader.getApplicationUrl("dashboard_url"));   
+		 Helper.driver.get(ConfigReader.getApplicationUrl());   
 	}
 
 @When("Admin clicks Batch from navigation bar")

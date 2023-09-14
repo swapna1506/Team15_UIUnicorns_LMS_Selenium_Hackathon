@@ -15,11 +15,11 @@ import io.cucumber.java.en.When;
 public class Login_ResetPassword_StepDef {
 	WebDriver driver = Helper.getDriver();
 	Login_ResetPassword_PageObj lrp=new Login_ResetPassword_PageObj(driver);
-	
+	String url;
 	//first background
 	@Given("Admin in login page after clicking login button in home page")
-	public void admin_in_login_page_after_clicking_login_button_in_home_page() {
-		 Helper.driver.get(ConfigReader.getApplicationUrl("url"));  
+	public void admin_in_login_page_after_clicking_login_button_in_home_page() throws InterruptedException {
+		Helper.openPage(url);  
 		 lrp.buttonclickable();
 	}
 	
@@ -81,14 +81,14 @@ public class Login_ResetPassword_StepDef {
 	
 		@Given("Admin clicks reset password link after  reaching in login page")
 		public void admin_clicks_reset_password_link_after_reaching_in_login_page() {
-			 Helper.driver.get(ConfigReader.getApplicationUrl("lgn_url"));
+			 Helper.driver.get(ConfigReader.getApplicationUrl());
 			 lrp.resetPassword();
 		}
 	//these are scenarios
 		
 		@Given("Admin reset password page")
 		public void admin_reset_password_page() {
-			Helper.driver.get(ConfigReader.getApplicationUrl("reset_url"));
+			Helper.driver.get(ConfigReader.getApplicationUrl());
 		}
 
 		@When("Admin clicks on type in new password field")
