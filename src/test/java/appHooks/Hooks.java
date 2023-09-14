@@ -34,6 +34,7 @@ import io.qameta.allure.Allure;
 			//Initialize driver
 			driver = Helper.getDriver();
 			Loggerload.info("Initializing driver for : "+browser);
+			String url = ConfigReader.getApplicationUrl();
 		}
 		
 		@Before
