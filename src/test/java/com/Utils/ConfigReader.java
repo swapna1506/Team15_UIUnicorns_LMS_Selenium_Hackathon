@@ -38,13 +38,17 @@ public class ConfigReader {
 	}
 
 
-	public static String getApplicationUrl() {
-		String url = properties.getProperty("url");
-		if (url != null)
-			return url;
+	public static String getApplicationUrl(String u) {
+		String ur = properties.getProperty("u");
+		if (ur != null)
+			return ur;
 		else
 			throw new RuntimeException("url not specified in the Configuration.properties file.");
 	}
+	
+	
+	
+	
 
 	public static String getexcelfilepath() {
 		String excelfilelpath = properties.getProperty("excelfilepath");
@@ -53,5 +57,8 @@ public class ConfigReader {
 		else
 			throw new RuntimeException("Excel file path not specified in the Configuration.properties file.");
 	}
+
+	
+	
 
 }

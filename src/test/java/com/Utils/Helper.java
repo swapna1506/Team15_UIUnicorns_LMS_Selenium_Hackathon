@@ -8,11 +8,11 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 public class Helper {
 	private static Helper Helper;    
-	private static WebDriver driver ;
+	public static WebDriver driver ;
 
 	//public final static int TIMEOUT = 2;
 	public final static int TIMEOUT = 2;
@@ -20,7 +20,7 @@ public class Helper {
 
 	private Helper() {
 
-		WebDriverManager.chromedriver().setup(); //setting up and initializing webdriver
+		//WebDriverManager.chromedriver().setup(); //setting up and initializing webdriver
 		
 		//Resolving the chrome chrome websocket error
 
@@ -52,10 +52,11 @@ public class Helper {
 		return driver;
 	}
 
-	public static void setUpDriver() {
+	public static WebDriver setUpDriver() {
 		if (Helper==null) {
 			Helper = new Helper();
 		}
+		return driver;
 	}
 	public static void tearDown() {
 		if(driver!=null) {
