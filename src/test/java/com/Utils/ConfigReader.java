@@ -1,7 +1,9 @@
 package com.Utils;
 
+import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
 
@@ -9,10 +11,45 @@ import driverFactoryPkg.DriverFactory;
 
 public class ConfigReader {
 	private static Properties properties;
-	private final static String propertyFilePath = "./src/test/resources/Config/config.properties";
+	private final static String propertyFilePath = "./src/test/resources/Config//config.properties";
 	private static String browserType = null;
 
+
 	public static Properties loadConfig() throws Throwable {
+
+
+	private static Properties prop=null;
+	
+	public static Properties init_properties()
+
+	{
+		  prop = new Properties();
+		  try 
+		  {
+		   FileInputStream ip = new FileInputStream("C:\\Users\\preet\\OneDrive\\Documents\\SeleniumProjects\\DSAlgoProject_new\\src\\test\\resources\\config\\config.properties");
+		   try 
+		   {
+		    prop.load(ip);
+		    ip.close();
+		   } 
+		   catch (IOException e) 
+		   {
+		    e.printStackTrace();
+		   }
+		  } 
+		  catch (FileNotFoundException e)
+		  {
+		   e.printStackTrace();
+		  }
+
+		  return prop;
+		 }
+	
+	public static void loadConfig() throws Throwable {
+
+
+  public static void loadConfig() throws Throwable {
+
 
 		try {
 			FileInputStream fis;
@@ -30,6 +67,8 @@ public class ConfigReader {
 		}
 		return properties;
 	}
+	
+
 
 	public static String getBrowserType() {
 		String browser = properties.getProperty("browser");
@@ -48,6 +87,7 @@ public class ConfigReader {
 		else
 			throw new RuntimeException("url not specified in the Configuration.properties file.");
 	}
+
 	public static String getPageurl() 
 	{
 		String url = Helper.getDriver().getCurrentUrl();
@@ -55,6 +95,18 @@ public class ConfigReader {
 		return url;
 		
 	}
+
+	
+	public static String geturl(String pagename) {
+		String url = properties.getProperty(pagename);
+		if (url != null)
+			return url;
+		else
+			throw new RuntimeException(pagename + " url not specified in the Configuration.properties file.");
+	}
+
+
+
 	public static String getexcelfilepath() {
 		String excelfilelpath = properties.getProperty("excelfilepath");
 		if (excelfilelpath != null)
@@ -72,5 +124,45 @@ public class ConfigReader {
 		String url = properties.getProperty("EditAssgnUrl");
 		return url;
 	}
+
+	
+	 public static String getInvocationMode() 
+	 {
+	 	if(prop==null)	
+	 	init_properties();
+	 		
+	 	  String invocation_mode = prop.getProperty("invocation_mode");//System.out.println(invocation_mode);
+	 	  if (invocation_mode != null)
+	 	   return invocation_mode;
+	 	  else
+	 	   throw new RuntimeException("Browser is  not specified in the config.properties file.");
+	 	 }
+	 
+	 public static String getUserName() 
+	 {
+		 if(prop==null)	
+				init_properties();
+	  String username = prop.getProperty("username");
+	  if (username != null)
+	   return username;
+	  else
+	   throw new RuntimeException("username not specified in the config.properties file.");
+	 }
+	 
+	 public static String getPassword() 
+	 {
+		 if(prop==null)	
+				init_properties();
+	  String password = prop.getProperty("password");
+	  if (password != null)
+	   return password;
+	  else
+	   throw new RuntimeException("password not specified in the config.properties file.");
+	 }
+
+	public static void setBrowserType(String browser) {
+		browserType = browser;
+	}
+
 
 }

@@ -1,9 +1,14 @@
 package com.Utils;
+import org.apache.poi.hssf.usermodel.HSSFCell;
+import org.apache.poi.hssf.usermodel.HSSFRow;
+import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+
 
 import org.apache.poi.hssf.usermodel.HSSFCell;
 import org.apache.poi.hssf.usermodel.HSSFRow;
@@ -60,6 +65,11 @@ public class ExcelReader {
 //
 //		return totalRow;
 //	}
+=======
+
+public class ExcelReader {
+
+
 	 private static HSSFWorkbook workbook;
 	    private static HSSFSheet sheet;
 	    private static HSSFRow row;
@@ -77,7 +87,7 @@ public class ExcelReader {
 	       
 	       //creating a Sheet object
 	        sheet=workbook.getSheet(sheetName);
-	   }
+
 	    public String getCellData(int rowNumber,int cellNumber){
 	       //getting the cell value from rowNumber and cell Number
 	        cell =sheet.getRow(rowNumber).getCell(cellNumber);
@@ -98,4 +108,3 @@ public class ExcelReader {
 	    	FileOutputStream outputStream = new FileOutputStream(excelFilePath);
 	    	workbook.write(outputStream);
 	    }
-}

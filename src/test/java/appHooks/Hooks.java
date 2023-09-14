@@ -22,6 +22,7 @@ import io.cucumber.java.BeforeAll;
 import io.cucumber.java.Scenario;
 import io.qameta.allure.Allure;
 
+
 	public class Hooks 
 	{
 //		private static WebDriver driver=Helper.getDriver();
@@ -65,7 +66,24 @@ import io.qameta.allure.Allure;
 //			Loggerload.info("Closing Driver");
 //			Helper.tearDown();
 //		}
-		
+
+	public class Hooks {
+		private static WebDriver driver;
+		static Scenario scenario;
+
+		@BeforeAll
+		public static void before() throws Throwable {
+			//Get browser Type from config file
+			Loggerload.info("Loading Config file");
+			ConfigReader.loadConfig();
+			String browser = ConfigReader.getBrowserType();
+			
+			//Initialize driver
+			driver = Helper.getDriver();
+			Loggerload.info("Initializing driver for : "+browser);
+			String url = ConfigReader.getApplicationUrl();
+		}
+
 //		private DriverFactory driverFactory;
 //		//private WebDriver driver;
 //		private ConfigReader configReader;
