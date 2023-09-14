@@ -131,6 +131,11 @@
 			<version>5.0.9</version>
 		</dependency>
 
+				
+</dependencies>
+<build>
+=======
+
 		</dependencies>
 <build>
 	<dependency>
@@ -153,6 +158,7 @@
  </dependencies>
 
   <build>
+
 
 	  <pluginManagement>
 		<plugins>
