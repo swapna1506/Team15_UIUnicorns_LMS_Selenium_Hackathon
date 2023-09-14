@@ -9,7 +9,66 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
+
+import org.apache.poi.hssf.usermodel.HSSFCell;
+import org.apache.poi.hssf.usermodel.HSSFRow;
+import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+
 public class ExcelReader {
+
+//	public static int totalRow;
+//
+//	public List<Map<String, String>> getData(String excelFilePath, String sheetName)
+//			throws InvalidFormatException, IOException {
+//
+//		Workbook workbook = WorkbookFactory.create(new File(excelFilePath));
+//		Sheet sheet = workbook.getSheet(sheetName);
+//		workbook.close();
+//		return readSheet(sheet);
+//	}
+//
+//	private List<Map<String, String>> readSheet(Sheet sheet) {
+//
+//		Row row;
+//		Cell cell;
+//
+//		totalRow = sheet.getLastRowNum();
+//
+//		List<Map<String, String>> excelRows = new ArrayList<Map<String, String>>();
+//
+//		for (int currentRow = 1; currentRow <= totalRow; currentRow++) {
+//
+//			row = sheet.getRow(currentRow);
+//
+//			int totalColumn = row.getLastCellNum();
+//
+//			LinkedHashMap<String, String> columnMapdata = new LinkedHashMap<String, String>();
+//
+//			for (int currentColumn = 0; currentColumn < totalColumn; currentColumn++) {
+//
+//				cell = row.getCell(currentColumn);
+//
+//				String columnHeaderName = sheet.getRow(sheet.getFirstRowNum()).getCell(currentColumn)
+//						.getStringCellValue();
+//
+//				columnMapdata.put(columnHeaderName, cell.getStringCellValue());
+//			}
+//
+//			excelRows.add(columnMapdata);
+//		}
+//
+//		return excelRows;
+//	}
+//
+//	public int countRow() {
+//
+//		return totalRow;
+//	}
+=======
+
+public class ExcelReader {
+
 
 	 private static HSSFWorkbook workbook;
 	    private static HSSFSheet sheet;
@@ -28,8 +87,6 @@ public class ExcelReader {
 	       
 	       //creating a Sheet object
 	        sheet=workbook.getSheet(sheetName);
-
-	   }
 
 	    public String getCellData(int rowNumber,int cellNumber){
 	       //getting the cell value from rowNumber and cell Number
@@ -51,4 +108,3 @@ public class ExcelReader {
 	    	FileOutputStream outputStream = new FileOutputStream(excelFilePath);
 	    	workbook.write(outputStream);
 	    }
-	}

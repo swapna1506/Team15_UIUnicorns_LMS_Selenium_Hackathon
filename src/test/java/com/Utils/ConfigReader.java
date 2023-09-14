@@ -7,10 +7,15 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
 
+import driverFactoryPkg.DriverFactory;
+
 public class ConfigReader {
 	private static Properties properties;
 	private final static String propertyFilePath = "./src/test/resources/Config//config.properties";
 	private static String browserType = null;
+
+
+	public static Properties loadConfig() throws Throwable {
 
 
 	private static Properties prop=null;
@@ -42,6 +47,7 @@ public class ConfigReader {
 	
 	public static void loadConfig() throws Throwable {
 
+
   public static void loadConfig() throws Throwable {
 
 
@@ -59,6 +65,7 @@ public class ConfigReader {
 			e.printStackTrace();
 			throw new RuntimeException("Configuration.properties not found at " + propertyFilePath);
 		}
+		return properties;
 	}
 	
 
@@ -80,6 +87,15 @@ public class ConfigReader {
 		else
 			throw new RuntimeException("url not specified in the Configuration.properties file.");
 	}
+
+	public static String getPageurl() 
+	{
+		String url = Helper.getDriver().getCurrentUrl();
+		System.out.println("\\n****URL**"+ url);
+		return url;
+		
+	}
+
 	
 	public static String geturl(String pagename) {
 		String url = properties.getProperty(pagename);
@@ -90,12 +106,23 @@ public class ConfigReader {
 	}
 
 
+
 	public static String getexcelfilepath() {
 		String excelfilelpath = properties.getProperty("excelfilepath");
 		if (excelfilelpath != null)
 			return excelfilelpath;
 		else
 			throw new RuntimeException("Excel file path not specified in the Configuration.properties file.");
+	}
+	public static String getManageAssignPageurl()
+	{
+		String url = properties.getProperty("MngAssgnUrl");
+		return url;
+	}
+	public static String getEditAssignPageurl()
+	{
+		String url = properties.getProperty("EditAssgnUrl");
+		return url;
 	}
 
 	
@@ -132,7 +159,7 @@ public class ConfigReader {
 	  else
 	   throw new RuntimeException("password not specified in the config.properties file.");
 	 }
-=======
+
 	public static void setBrowserType(String browser) {
 		browserType = browser;
 	}
