@@ -78,10 +78,10 @@ public class AttendanceDetails1StepDef extends BaseClass {
 		   Assert.assertTrue(actuallist.equals(list));
 	}
 
-	@When("Admin clicks date from date picker")
+	/*@When("Admin clicks date from date picker")
 	public void admin_clicks_date_from_date_picker() {
 	    adp1.ClickDatePicker();
-	}
+	}*/
 
 	@Then("selected date should be their in class date text box")
 	public void selected_date_should_be_their_in_class_date_text_box() {
@@ -93,30 +93,30 @@ public class AttendanceDetails1StepDef extends BaseClass {
 	   adp1.ValidateDateFormat(); 
 	}
 
-	@When("Admin clicks right arrow in the date picker near month")
+	/*@When("Admin clicks right arrow in the date picker near month")
 	public void admin_clicks_right_arrow_in_the_date_picker_near_month() {
 	   adp1.validateRightarrow();
-	}
+	}*/
 
 	@Then("Next month calender should visible")
 	public void next_month_calender_should_visible() {
 	    Assert.assertEquals(driver.getTitle(), "next month");
 	}
 
-	@When("Admin clicks left arrow in the date picker near month")
+	/*@When("Admin clicks left arrow in the date picker near month")
 	public void admin_clicks_left_arrow_in_the_date_picker_near_month() {
 	   adp1.validateLeftarrow();
-	}
+	}*/
 
-	@Then("previous month calender should visible")
+	/*@Then("previous month calender should visible")
 	public void previous_month_calender_should_visible() {
 		  Assert.assertEquals(driver.getTitle(), "Previous month");
-	}
+	}*/
 
-	@When("Admin clicks date picker button")
+	/*@When("Admin clicks date picker button")
 	public void admin_clicks_date_picker_button() {
 	    adp1.ClickDatePicker();
-	}
+	}*/
 
 	@Then("Admin should see current date is highled in the date picker")
 	public void admin_should_see_current_date_is_highled_in_the_date_picker() {

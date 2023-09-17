@@ -96,15 +96,15 @@ public class AttendanceDetailsStepDef extends BaseClass {
 	   adp.validateColor();
 	}
 
-	@Then("Admin should see  save button in the class detail popup window")
+	/*@Then("Admin should see  save button in the class detail popup window")
 	public void admin_should_see_save_button_in_the_class_detail_popup_window() {
 	   adp.validateSaveButton();
-	}
+	}*/
 
-	@Then("Admin should see  cancel button in the class detail popup window")
+	/*@Then("Admin should see  cancel button in the class detail popup window")
 	public void admin_should_see_cancel_button_in_the_class_detail_popup_window() {
 	   adp.validateCancelButton();
-	}
+	}*/
 
 	@Then("Order of the label should be Program name, Class Name, Student Name, Attendance, Attendance Date")
 	public void order_of_the_label_should_be_program_name_class_name_student_name_attendance_attendance_date() {

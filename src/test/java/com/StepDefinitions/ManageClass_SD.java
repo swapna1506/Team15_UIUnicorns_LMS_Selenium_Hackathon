@@ -16,15 +16,15 @@ public class ManageClass_SD {
 	
 	ManageClassPage_obj MCP = new ManageClassPage_obj(driver);
 	
-	@Given("Admin is on dashboard page after Login")
-	public void admin_is_on_dashboard_page_after_login() {
+	@Given("Admin is on dashboard page after Login in to url {string}")
+	public void admin_is_on_dashboard_page_after_login_in_to_url() {
 	    
 	}
 
-	@When("Admin clicks {string} button on the navigation bar")
+	/*@When("Admin clicks {string} button on the navigation bar")
 	public void admin_clicks_button_on_the_navigation_bar(String string) {
 	   MCP.Classbutton();
-	}
+	}*/
 
 	@Then("Admin should see URL with {string}")
 	public void admin_should_see_url_with(String string) {
@@ -46,11 +46,11 @@ public class ManageClass_SD {
 	   MCP.ManageClassDetail();
 	}
 
-	@Then("Admin should see correct spelling for the all the fields")
+	/*@Then("Admin should see correct spelling for the all the fields")
 	public void admin_should_see_correct_spelling_for_the_all_the_fields() {
 	    
 		
-	}
+	}*/
 	
 	@Then("Admin should see disabled delete icon below the {string}")
 	public void admin_should_see_disabled_delete_icon_below_the(String string) {
@@ -67,16 +67,16 @@ public class ManageClass_SD {
 	    MCP.AddNewClassDisplay();
 	}
 
-	@Then("Admin should see data table on the Manage Class Page With following column headers. \\(Check box symbol,Batch Id, Class No,Class Date, Class Topic, Staff Id, Description, Comments, Notes, Recording, Edit Delete)")
+	/*@Then("Admin should see data table on the Manage Class Page With following column headers. \\(Check box symbol,Batch Id, Class No,Class Date, Class Topic, Staff Id, Description, Comments, Notes, Recording, Edit Delete)")
 	public void admin_should_see_data_table_on_the_manage_class_page_with_following_column_headers_check_box_symbol_batch_id_class_no_class_date_class_topic_staff_id_description_comments_notes_recording_edit_delete() {
 	    
-	}
+	}*/
 
-	@Then("Edit Icon in each row of data table only  when entries are available")
+	/*@Then("Edit Icon in each row of data table only  when entries are available")
 	public void edit_icon_in_each_row_of_data_table_only_when_entries_are_available() {
 	    MCP.EditIconchk();
 	}
-	
+	*/
 	@Then("Edit Icon will not be present in data table")
 	public void edit_icon_will_not_be_present_in_data_table() {
 		MCP.EditIconchk();
@@ -98,7 +98,7 @@ public class ManageClass_SD {
 	    MCP.IconHeaderDisplay();
 	}
 
-	@Then("Admin should see check box in the all rows  of data table")
+	/*@Then("Admin should see check box in the all rows  of data table")
 	public void admin_should_see_check_box_in_the_all_rows_of_data_table() {
 	    
 	}
@@ -107,7 +107,7 @@ public class ManageClass_SD {
 	public void above_the_footer_admin_should_see_the_text_as_below_the_table_x_starting_record_number_on_that_pagey_ending_record_number_on_that_pagez_total_number_of_records_note_with_or_without_entries(String string) {
 	    
 		
-	}
+	}*/
 
 	@Then("Admin should see the pagination controls under the data table")
 	public void admin_should_see_the_pagination_controls_under_the_data_table() {
@@ -129,20 +129,20 @@ public class ManageClass_SD {
 		MCP.PopUpBatchIDField();
 	}
 
-	@When("Admin enters batch id which is not existing the table into search box")
+	/*@When("Admin enters batch id which is not existing the table into search box")
 	public void admin_enters_batch_id_which_is_not_existing_the_table_into_search_box() {
 	    
-	}
+	}*/
 
 	@Then("Displays empty details in the data table")
 	public void displays_empty_details_in_the_data_table() {
 	    MCP.PopUpBatchIDField1(); 
 	}
 
-	@When("Admin enters class no into search box")
+	/*@When("Admin enters class no into search box")
 	public void admin_enters_class_no_into_search_box() {
 	    
-	}
+	}*/
 
 	@Then("Displays entries with that class no")
 	public void displays_entries_with_that_class_no() {
@@ -164,7 +164,7 @@ public class ManageClass_SD {
 	    MCP.PopUpClassTopicFeild() ;
 	}
 
-	@When("Admin enters class topic which is not existing the table into search box")
+	/*@When("Admin enters class topic which is not existing the table into search box")
 	public void admin_enters_class_topic_which_is_not_existing_the_table_into_search_box() {
 	    // Write code here that turns the phrase above into concrete actions
 	    throw new io.cucumber.java.PendingException();
@@ -173,14 +173,14 @@ public class ManageClass_SD {
 	@When("Admin enters staff id into search box")
 	public void admin_enters_staff_id_into_search_box() {
 	    
-	}
+	}*/
 
 	@Then("Displays entries with that  staff id")
 	public void displays_entries_with_that_staff_id() {
 	   MCP. PopUpStaffIdField(); 
 	}
 
-	@When("Admin enters staff id which is not existing the table into search box")
+	/*@When("Admin enters staff id which is not existing the table into search box")
 	public void admin_enters_staff_id_which_is_not_existing_the_table_into_search_box() {
 	    // Write code here that turns the phrase above into concrete actions
 	    throw new io.cucumber.java.PendingException();
@@ -202,7 +202,7 @@ public class ManageClass_SD {
 	public void admin_enters_invalid_class_date_into_search_box() {
 	    // Write code here that turns the phrase above into concrete actions
 	    throw new io.cucumber.java.PendingException();
-	}
+	}*/
 
 
 

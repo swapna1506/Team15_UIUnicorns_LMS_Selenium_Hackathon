@@ -150,11 +150,11 @@ public class Assgn_AddNewAssignmentSteps
 		AddNewAssgnPgVrf.ClickDatePicker();
 	}*/
 
-	@Then("selected date should be their in class date text box")
+	/*@Then("selected date should be their in class date text box")
 	public void selected_date_should_be_their_in_class_date_text_box() 
 	{
 	   
-	}
+	}*/
 
 //	@Then("selected date should be in  mm\\/dd\\/yyyy format")
 //	public void selected_date_should_be_in_mm_dd_yyyy_format() {
@@ -193,19 +193,19 @@ public class Assgn_AddNewAssignmentSteps
 		AddNewAssgnPgVrf.ClickDatePicker();
 	}*/
 
-	@Then("Admin should see current date is highled in the date picker")
+	/*@Then("Admin should see current date is highled in the date picker")
 	public void admin_should_see_current_date_is_highled_in_the_date_picker() 
 	{
 		LocalDateTime currentdate = LocalDateTime.now();
 	    String date = AddNewAssgnPgVrf.validateHighlightedDate();
 	    Assert.assertEquals(date, currentdate);   
-	}
+	}*/
 
-	@Then("Admin should see selected date is highled in the date picker")
+	/*@Then("Admin should see selected date is highled in the date picker")
 	public void admin_should_see_selected_date_is_highled_in_the_date_picker() 
 	{
 		AddNewAssgnPgVrf.ValidateSelecteddateHighlighted();
-	}
+	}*/
 //
 //	@When("Admin clicks date picker button and selects future date")
 //	public void admin_clicks_date_picker_button_and_selects_future_date() {

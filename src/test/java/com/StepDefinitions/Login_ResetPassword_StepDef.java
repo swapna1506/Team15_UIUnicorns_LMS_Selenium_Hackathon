@@ -117,7 +117,7 @@ public class Login_ResetPassword_StepDef {
 		   lrp.rset();
 		}
 
-		@Then("Admin should recieve  : {string}. Please click here to login")
+		/*@Then("Admin should recieve  : {string}. Please click here to login")
 		public void admin_should_recieve_please_click_here_to_login(String string) {
 		   
 		}
@@ -140,7 +140,7 @@ public class Login_ResetPassword_StepDef {
 		@When("Admin enters  mismatch values and clicks submit button")
 		public void admin_enters_mismatch_values_and_clicks_submit_button() {
 		    
-		}
+		}*/
 		
 	}
 

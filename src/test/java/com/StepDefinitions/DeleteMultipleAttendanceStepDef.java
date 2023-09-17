@@ -33,10 +33,10 @@ public class DeleteMultipleAttendanceStepDef extends BaseClass{
 	   dmp.ClickCheckbox();
 	}
 
-	@Then("Admin should see delete icon below the header is enabled")
+	/*@Then("Admin should see delete icon below the header is enabled")
 	public void admin_should_see_delete_icon_below_the_header_is_enabled() {
 	   dmp.EnableDelete(); 
-	}
+	}*/
 
 	@Then("Admin should see tick mark in check box")
 	public void admin_should_see_tick_mark_in_check_box() {
@@ -44,10 +44,10 @@ public class DeleteMultipleAttendanceStepDef extends BaseClass{
 	    
 	}
 
-	@When("Admin clicks multiple row level check box in the data table")
+	/*@When("Admin clicks multiple row level check box in the data table")
 	public void admin_clicks_multiple_row_level_check_box_in_the_data_table() {
 	    dmp.ClickMultipleRow();
-	}
+	}*/
 
 	@Then("Admin should see tick mark in check box  of the selected rows")
 	public void admin_should_see_tick_mark_in_check_box_of_the_selected_rows() {

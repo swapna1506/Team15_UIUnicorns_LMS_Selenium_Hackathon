@@ -1,7 +1,7 @@
  Feature: Manage Class Page Verification
  Background: Logged on the LMS portal as Admin
   Scenario: Verify landing in class page 
-    Given Admin is on dashboard page after Login
+    Given Admin is on dashboard page after Login in to url "https://tutorialsninja.com/demo/"
     When Admin clicks "Class" button on the navigation bar
     Then Admin should see URL with "Manage Class"
     

@@ -25,10 +25,10 @@ public class ClassDetail_SD {
 		CD.AddNewClassbutton();
 	}
 	
-	@Then("Admin should see a popup  with  heading {string}")
+	/*@Then("Admin should see a popup  with  heading {string}")
 	public void admin_should_see_a_popup_with_heading(String string) {
 	    CD.AddClassPage();
-	}
+	}*/
 
 	@Then("Admin should see input fields Text \\(Batch ID , No of Classes, Class Date, Class Topic, Staff Id, Class description, Comments, Notes, Recordings)")
 	public void admin_should_see_input_fields_text_batch_id_no_of_classes_class_date_class_topic_staff_id_class_description_comments_notes_recordings() {

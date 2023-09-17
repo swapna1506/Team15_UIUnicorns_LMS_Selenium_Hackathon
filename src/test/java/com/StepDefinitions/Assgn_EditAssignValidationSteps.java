@@ -17,13 +17,13 @@ public class Assgn_EditAssignValidationSteps
 		editassgnvalid.EditAssgPopupwdw();
 	}
 
-	@When("Admin clicks Edit button in data table")
+	/*@When("Admin clicks Edit button in data table")
 	public void admin_clicks_edit_button_in_data_table() 
 	{
 		editassgnvalid.Editpopupwdw();
-	}
-
-	@Then("Edit popup window appears with heading Assignment Details")
+	}*/
+}
+	/*@Then("Edit popup window appears with heading Assignment Details")
 	public void edit_popup_window_appears_with_heading_assignment_details() {
 	    // Write code here that turns the phrase above into concrete actions
 	    throw new io.cucumber.java.PendingException();
@@ -167,9 +167,9 @@ public class Assgn_EditAssignValidationSteps
 	    throw new io.cucumber.java.PendingException();
 	}*/
 
-	@Then("Admin should land on manage assignment Page and validate new assignment is not created in the data table")
+	/*@Then("Admin should land on manage assignment Page and validate new assignment is not created in the data table")
 	public void admin_should_land_on_manage_assignment_page_and_validate_new_assignment_is_not_created_in_the_data_table() {
 	    // Write code here that turns the phrase above into concrete actions
 	    throw new io.cucumber.java.PendingException();
 	}
-}
+}*/

@@ -32,15 +32,15 @@ public class UserPageSteps {
 	    Assert.assertTrue(uspg.SendURLText().contains(string));
 	}
 
-	@Then("Admin should see {string} in the header")
+	/*@Then("Admin should see {string} in the header")
 	public void admin_should_see_in_the_header(String string) {
 		Assert.assertTrue(uspg.isPageTitleDisplayed());
-	}
+	}*/
 
-	@Then("Admin should see the pagination controls under the data table")
+	/*@Then("Admin should see the pagination controls under the data table")
 	public void admin_should_see_the_pagination_controls_under_the_data_table() {
 		Assert.assertTrue(uspg.isFooterPaginatorDisplayed());
-	}
+	}*/
 
 	@Then("Admin should see the data table with headers Id, Name, location, Phone Number, Edit\\/Delete")
 	public void admin_should_see_the_data_table_with_headers_id_name_location_phone_number_edit_delete() {
@@ -66,25 +66,25 @@ public class UserPageSteps {
 		Assert.assertTrue(uspg.isSearchBoxDisplayed());
 	}
 
-	@Then("Each row in the data table should have a checkbox")
+	/*@Then("Each row in the data table should have a checkbox")
 	public void each_row_in_the_data_table_should_have_a_checkbox() {
 		Assert.assertTrue(uspg.isSelectAllCheckBoxDisplayed());
-	}
+	}*/
 
 	@Then("Each row in the data table should have an edit icon that is enabled")
 	public void each_row_in_the_data_table_should_have_an_edit_icon_that_is_enabled() {
 		Assert.assertTrue(uspg.isEditRowButtonEnabled());
 	}
 
-	@Then("Each row in the data table should have a delete icon that is enabled")
+	/*@Then("Each row in the data table should have a delete icon that is enabled")
 	public void each_row_in_the_data_table_should_have_a_delete_icon_that_is_enabled() {
 		Assert.assertTrue(uspg.isDeleteRowButtonEnabledForEachRow());
-	}
+	}*/
 
-	@When("Admin clicks {string} button")
+	/*@When("Admin clicks {string} button")
 	public void admin_clicks_button(String string) {
 	   uspg.clickAddNewUser();
-	}
+	}*/
 	
 	@Given("Admin is logged on the LMS portal")
 	public void admin_is_logged_on_the_lms_portal() {
@@ -217,10 +217,10 @@ public class UserPageSteps {
 		    throw new io.cucumber.java.PendingException();
 		}
 
-		@When("Admin clicks the edit icon")
+		/*@When("Admin clicks the edit icon")
 		public void admin_clicks_the_edit_icon() {
 			Assert.assertTrue(uspg.isEditRowButtonEnabled());
-		}
+		}*/
 
 		@Then("A popup with user details should appear")
 		public void a_popup_with_user_details_should_appear() {

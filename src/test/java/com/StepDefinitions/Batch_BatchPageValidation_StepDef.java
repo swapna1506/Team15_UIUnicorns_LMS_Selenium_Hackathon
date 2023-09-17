@@ -26,10 +26,10 @@ public class Batch_BatchPageValidation_StepDef {
 	
 	//scenarios
 	
-	@Given("Admin is on dashboard page after Login")
+	/*@Given("Admin is on dashboard page after Login")
 	public void admin_is_on_dashboard_page_after_login() {
 		 Helper.driver.get(ConfigReader.getApplicationUrl());   
-	}
+	}*/
 
 @When("Admin clicks Batch from navigation bar")
 public void Admin_clicks_Batch_from_navigation_bar() {
@@ -53,11 +53,11 @@ public void Admin_clicks_Batch_from_navigation_bar() {
 	    
 	}
 
-	@Then("Admin should see the pagination controls under the data table")
+	/*@Then("Admin should see the pagination controls under the data table")
 	public void admin_should_see_the_pagination_controls_under_the_data_table() {
 		
 		Assert.assertEquals(b.pagination.isDisplayed(),"True");
-	}
+	}*/
 
 	@Then("Admin Should see the data table with headers Batch name, Batch Description,Batch Status, No. of classes, Program Name, EditDelete")
 	public void admin_should_see_the_data_table_with_headers_batch_name_batch_description_batch_status_no_of_classes_program_name_edit_delete() {

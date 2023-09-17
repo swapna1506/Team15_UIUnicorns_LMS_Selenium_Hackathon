@@ -17,7 +17,7 @@ public class Navigation_SD {
 	
 	
 
-@When("Admin clicks Student button in the navigation bar")
+/*@When("Admin clicks Student button in the navigation bar")
 public void admin_clicks_student_button_in_the_navigation_bar() {
  
 	objng.studntclickmethod();
@@ -100,7 +100,7 @@ public void admin_should_able_to_land_on_attendance_page() {
 public void admin_should_able_to_land_on_login_page() {
     
     objng.msgchlogoutchk();
-}
+}*/
 
 
 }

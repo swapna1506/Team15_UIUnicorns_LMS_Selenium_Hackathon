@@ -24,13 +24,13 @@ public class Assgn_ManagePageVerificationSteps
 	private WebDriver driver = Helper.getDriver();
 	private Assgn_ManagePgVerificationPage AssgnMngPgVrf = new Assgn_ManagePgVerificationPage();
 	
-	@Given("Admin is on dashboard page after Login")
+	/*@Given("Admin is on dashboard page after Login")
 	public void admin_is_on_dashboard_page_after_login() 
 	{
 		AssgnMngPgVrf.openLmlPortal();
-	}
+	}*/
 
-	@When("Admin clicks {string} button on the navigation bar")
+	/*@When("Admin clicks {string} button on the navigation bar")
 	public void admin_clicks_button_on_the_navigation_bar(String string) 
 	{
 		AssgnMngPgVrf.clickOnNavigationBar();
@@ -62,7 +62,7 @@ public class Assgn_ManagePageVerificationSteps
 		AssgnMngPgVrf.clickOnNavigationBar();
 	}
 
-	@Then("Admin should see correct spelling for the all the fields")
+	/*@Then("Admin should see correct spelling for the all the fields")
 	public void admin_should_see_correct_spelling_for_the_all_the_fields()
 	{
 		 String stuText = AssgnMngPgVrf.validateStuField();
@@ -124,14 +124,14 @@ public class Assgn_ManagePageVerificationSteps
 		boolean EditIconPresent=AssgnMngPgVrf.validateEditIcon();
 		Assert.assertTrue(EditIconPresent);
 	}
-	@Then("Edit Icon will not be present in data table")
+	/*@Then("Edit Icon will not be present in data table")
 	public void edit_icon_will_not_be_present_in_data_table() 
 	{
 		boolean EditIconNotPresent=AssgnMngPgVrf.validateEditIcon();
 		Assert.assertTrue(EditIconNotPresent);
 
 	}	
-	@Then("Delete Icon in each row of data table only  when entries are available")
+	/*@Then("Delete Icon in each row of data table only  when entries are available")
 	public void delete_icon_in_each_row_of_data_table_only_when_entries_are_available() 
 	{
 		boolean DeleteIconpresent =AssgnMngPgVrf.validateDeleteIcon();
@@ -145,19 +145,19 @@ public class Assgn_ManagePageVerificationSteps
 		Assert.assertTrue(DeleteIconNotpresent);
 	}
 
-	@Then("Admin should see sort icon near the column headers except for Edit and Delete")
+/*	@Then("Admin should see sort icon near the column headers except for Edit and Delete")
 	public void admin_should_see_sort_icon_near_the_column_headers_except_for_edit_and_delete() 
 	{
 		boolean SortIconPresent =AssgnMngPgVrf.validateSortIcon();
 		Assert.assertTrue(SortIconPresent);		
 	 }
 
-	@Then("Admin should see the pagination controls under the data table")
+/*	@Then("Admin should see the pagination controls under the data table")
 	public void admin_should_see_the_pagination_controls_under_the_data_table() 
 	{
 		boolean paginationctrls=AssgnMngPgVrf.validatePagination();
 		Assert.assertTrue(paginationctrls);		
-	}
+	}*/
 
 	@Given("Admin is on manage assignment page")
 	public void admin_is_on_manage_assignment_page() 

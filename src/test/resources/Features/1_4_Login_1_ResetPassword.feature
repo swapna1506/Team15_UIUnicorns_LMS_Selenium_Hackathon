@@ -46,17 +46,17 @@ Feature: 1_Reset password
     When Admin clicks reset password link
     Then Admin should see two text box
 
-  Scenario: 
+  Scenario: reset password
     Given Admin is in login page
     When Admin clicks reset password link
     Then Admin should see "Type in new password" in the first label text
 
-  Scenario: 
+  Scenario: reset pass
     Given Admin is in login page
     When Admin clicks reset password link
     Then Admin should see "Retype password" in the second label text
 
-  Scenario Outline: 
+  Scenario: reset password login 
     Given Admin is in login page
     When Admin clicks reset password link
     Then Admin should see text box in disabled state 

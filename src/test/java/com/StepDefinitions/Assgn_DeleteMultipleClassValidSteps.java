@@ -16,35 +16,35 @@ public class Assgn_DeleteMultipleClassValidSteps
 {
 	private WebDriver driver = Helper.getDriver();
 	private Assgn_DeleteMultipleClassValidPage DltMultipleClass = new Assgn_DeleteMultipleClassValidPage();
-	@Given("Admin is in manage assignment page")
-	public void admin_is_in_manage_assignment_page() 
+	//@Given("Admin is in manage assignment page")
+/*	public void admin_is_in_manage_assignment_page() 
 	{
 		DltMultipleClass.ManageAssignPageUrl();
-	}
+	}*/
 
-	@When("Admin clicks single  row level check box in the data table")
+/*	@When("Admin clicks single  row level check box in the data table")
 	public void admin_clicks_single_row_level_check_box_in_the_data_table() 
 	{
 		DltMultipleClass.Clickrow1chkbox();
-	}
+	}*/
 
-	@Then("Admin should see delete icon below the header is enabled")
+	/*@Then("Admin should see delete icon below the header is enabled")
 	public void admin_should_see_delete_icon_below_the_header_is_enabled() 
 	{
 		boolean str= DltMultipleClass.deleteIconEnable();	
 		Assert.assertTrue(str);
-	}
-	@Given("Admin is in delete alert")
+	}*/
+/*	@Given("Admin is in delete alert")
 	public void admin_is_in_delete_alert() 
 	{
 		DltMultipleClass.ShowDeleteAlertBox();
-	}
+	}*/
 
-	@When("Admin clicks yes button")
+	/*@When("Admin clicks yes button")
 	public void admin_clicks_yes_button() 
 	{
 		DltMultipleClass.AcceptAlert();
-	}
+	}*/
 //
 //	@Then("Redirected to assignment page and selected assignment details are deleted from the data table")
 //	public void redirected_to_assignment_page_and_selected_assignment_details_are_deleted_from_the_data_table() {

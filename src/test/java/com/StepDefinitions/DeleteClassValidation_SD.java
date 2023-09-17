@@ -36,11 +36,11 @@ public void alert_should_have_button_to_accept(String string) {
 }
 
 
-@When("Admin clicks yes button")
+/*@When("Admin clicks yes button")
 public void admin_clicks_yes_button() {
 	  obj.alertmsgyes();
    obj.NoMessagedisplayed();
-}
+}*/
 
 @Then("Admin should see alert")
 public void admin_should_see_alert() {
@@ -57,35 +57,35 @@ public void success_message_and_validate_particular_class_details_are_deleted_fr
     obj.Messagedisplayed();
 }
 
-@When("Admin clicks single  row level check box in the data table")
+/*@When("Admin clicks single  row level check box in the data table")
 public void admin_clicks_single_row_level_check_box_in_the_data_table() {
 	   obj.checkboxclickmethd();
-}
+}*/
 
 @Then("Admin should see delete icon below the header is enabled")
 public void admin_should_see_delete_icon_below_the_header_is_enabled() {
  obj.deletebtnenabledchk();
 }
 
-@Then("Admin should see tick mark in check box")
+/*@Then("Admin should see tick mark in check box")
 public void admin_should_see_tick_mark_in_check_box() {
 obj.chkboxselectCheckmsg();
-}
+}*/
 
 @When("Admin clicks multiple row level check box in the data table")
 public void admin_clicks_multiple_row_level_check_box_in_the_data_table() {
 	obj.multichkboxclickmethod();
 }
 
-@Then("Admin should see tick mark in check box  of the selected rows")
+/*@Then("Admin should see tick mark in check box  of the selected rows")
 public void admin_should_see_tick_mark_in_check_box_of_the_selected_rows() {
 	obj.multichkboxselectCheckmsg();
-}
+}*/
 
-@When("Admin clicks no button")
+/*@When("Admin clicks no button")
 public void admin_clicks_no_button() {
     obj.alertmsgno();
-}
+}*/
 
 @Then("Admin should land on manage class page and validate particular class details are not deleted from the data table")
 public void admin_should_land_on_manage_class_page_and_validate_particular_class_details_are_not_deleted_from_the_data_table() {

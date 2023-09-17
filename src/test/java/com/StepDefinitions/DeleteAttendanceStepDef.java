@@ -25,15 +25,15 @@ public class DeleteAttendanceStepDef extends BaseClass{
 
 	WebDriver driver = Helper.getDriver();
 	
-	@When("Admin clicks delete button in data table row level")
+	/*@When("Admin clicks delete button in data table row level")
 	public void admin_clicks_delete_button_in_data_table_row_level() {
 	  dap.ValidateDeleteAlert();;
-	}
+	}*/
 
-	@Then("Admin should see alert")
+	/*@Then("Admin should see alert")
 	public void admin_should_see_alert() {
 	   dap.DisplayAlert();
-	}
+	}*/
 
 	@Then("Alert should have {string} button to accept")
 	public void alert_should_have_button_to_accept(String string) {

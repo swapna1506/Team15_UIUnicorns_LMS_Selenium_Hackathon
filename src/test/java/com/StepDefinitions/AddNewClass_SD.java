@@ -93,26 +93,26 @@ public class AddNewClass_SD {
 	public void class_cannot_be_created_for_the_passed_date() {
 		objanw.checkclasdtmsg();
 	}
-	@When("Admin clicks date from date picker")
+	/*@When("Admin clicks date from date picker")
 	public void admin_clicks_date_from_date_picker() {
 		objanw.checkclasdtmsg();
-	}
+	}*/
 	/*@Then("selected date should be their in class date text box")
 	public void selected_date_should_be_their_in_class_date_text_box() {
 		objanw.checkclasdtmsg();
 	}*/
-	@Then("selected date should be in  mm\\/dd\\/yyyy format")
+	/*@Then("selected date should be in  mm\\/dd\\/yyyy format")
 	public void selected_date_should_be_in_mm_dd_yyyy_format() {
 		objanw.checkclasdtmsg();
-	}
+	}*/
 	/*@When("Admin clicks right arrow in the date picker near month")
 	public void admin_clicks_right_arrow_in_the_date_picker_near_month() {
 		objanw.checkclasdtmsg();
 	}*/
-	@Then("Next month calender should visible")
+	/*@Then("Next month calender should visible")
 	public void next_month_calender_should_visible() {
 		objanw.checkclasdtmsg();
-	}
+	}*/
 	@When("Admin clicks left arrow in the date picker near month")
 	public void admin_clicks_left_arrow_in_the_date_picker_near_month() {
 		objanw.checkclasdtmsg();

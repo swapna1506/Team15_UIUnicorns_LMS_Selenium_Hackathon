@@ -27,27 +27,27 @@ When Admin clicks on type in new password field
 Then Admin should see text box is enabled state
 
 
-Scenario:
+Scenario: verify reset
 Given Admin reset password page
 When Admin clicks on retype password field
 Then Admin should see text box is enabled state
 
-Scenario:
+Scenario: reset password
 Given Admin reset password page
 When Admin enters same password on both field and clicks submit button
 Then Admin should recieve  : "Your password has been reset". Please click here to login
 
-Scenario:
+Scenario: veryfy reset password
 Given Admin reset password page
 When Admin enters same password on both field with invalid details and clicks submit button
 Then Error message " Please try agin"
 
-Scenario:
+Scenario: password reset
 Given Admin reset password page
 When Admin enters  empty details on both fieldand clicks submit button
 Then Error message " Please try agin"
 
-Scenario:
+Scenario: validate reset password
 Given Admin reset password page
 When Admin enters  mismatch values and clicks submit button
 Then Error message " Please try agin"

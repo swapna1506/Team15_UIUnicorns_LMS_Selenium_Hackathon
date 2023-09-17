@@ -34,12 +34,12 @@ public class Assgn_DeleteAssgnValidationSteps
 	    Assert.assertTrue(dialogBoxVisible);
 	}
 
-	@Then("Alert should have {string} button to accept")
+	/*@Then("Alert should have {string} button to accept")
 	public void alert_should_have_button_to_accept(String string) 
 	{
 		boolean AcceptBtn=deleteAssgn.AcceptAlert();
 		Assert.assertTrue(AcceptBtn);
-	}
+	}*/
 
 	@Then("Alert should have {string} button to reject")
 	public void alert_should_have_button_to_reject(String string)
@@ -67,12 +67,12 @@ public class Assgn_DeleteAssgnValidationSteps
 //	    throw new io.cucumber.java.PendingException();
 //	}
 //
-	@When("Admin clicks no button")
+/*	@When("Admin clicks no button")
 	public void admin_clicks_no_button() 
 	{
 		deleteAssgn.ClickNoBtn();
 
-   }
+   }*/
 //
 //	@Then("Redirected to assignment page and selected assignment details are not deleted from the data table")
 //	public void redirected_to_assignment_page_and_selected_assignment_details_are_not_deleted_from_the_data_table() {

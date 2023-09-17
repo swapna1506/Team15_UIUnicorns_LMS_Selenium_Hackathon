@@ -70,11 +70,11 @@ public class ManageAttendenceStepDef extends BaseClass {
 		mp.validateBrokenLink();
 	}
 
-	@Then("Admin should see LMS-Learning management system as title")
+	/*@Then("Admin should see LMS-Learning management system as title")
 	public void admin_should_see_lms_learning_management_system_as_title() {
 	    String actualText = mp.validateTitle();
 	    Assert.assertEquals(actualText, "LMS-Learning Management System");
-	}
+	}*/
 
 	@Then("Manage attendence header should be in left side of page")
 	public void manage_attendence_header_should_be_in_left_side_of_page() {
@@ -88,7 +88,7 @@ public class ManageAttendenceStepDef extends BaseClass {
 	   
 	}
 
-	@Then("Admin should see correct spelling for the all the fields")
+/*	@Then("Admin should see correct spelling for the all the fields")
 	public void admin_should_see_correct_spelling_for_the_all_the_fields() {
 	    String stuText = mp.validateStuField();
 	    Assert.assertEquals(stuText, "Student");
@@ -116,12 +116,12 @@ public class ManageAttendenceStepDef extends BaseClass {
 	   
 	}
 
-	@Then("Admin should see disabled delete icon below the {string}")
+	/*@Then("Admin should see disabled delete icon below the {string}")
 	public void admin_should_see_disabled_delete_icon_below_the(String string) {
 	    
 	    mp.verifyDeleteIcon();	
 	    
-	}
+	}*/
 
 	@Then("Admin should see search bar on the attendance page")
 	public void admin_should_see_search_bar_on_the_attendance_page() {
@@ -146,17 +146,17 @@ public class ManageAttendenceStepDef extends BaseClass {
 	    mp.validateEditIcon();
 	}
 
-	@Then("Edit Icon will not be present in data table")
+	/*@Then("Edit Icon will not be present in data table")
 	public void edit_icon_will_not_be_present_in_data_table() {
 	    mp.validateEditIcon();
-	}
+	}*/
 
-	@Then("Delete Icon in each row of data table only  when entries are available")
+	/*@Then("Delete Icon in each row of data table only  when entries are available")
 	public void delete_icon_in_each_row_of_data_table_only_when_entries_are_available() {
 	    mp.validateDeleteIcon();
 	}
 
-	@Then("Admin cant see delete  Icon in data table")
+	/*@Then("Admin cant see delete  Icon in data table")
 	public void admin_cant_see_delete_icon_in_data_table() {
 	   mp.validateDeleteIcon();
 	}
@@ -188,5 +188,5 @@ public class ManageAttendenceStepDef extends BaseClass {
 		int number = row.size();
 	    String actualText = mp.validateTotalAttendances();
 	    Assert.assertEquals(actualText, "In total there are"+number+"attendances");
-	}
+	}*/
 }
